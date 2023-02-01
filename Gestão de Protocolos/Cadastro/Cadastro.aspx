@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      <div id="EMPRESA" class="container mt-3" style="display:none;">
+      <div runat="server" id="EMPRESA" class="container mt-3" visible="true">
   <h2>CADASTRAR EMPRESA</h2>
   
     <div class="mb-3 mt-3">
@@ -32,18 +32,18 @@
       <asp:CheckBox runat="server" class="form-check-input" type="checkbox" name="remember" Text="Confirmo que tudo é veridico" />  
       </div>
       <div class="col">
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <asp:Button Text="Confirmar" runat="server" OnClick="Unnamed_Click" />
       </div>
     </div>  
 </div>
 
 
-          <div id="SETORES" class="container mt-3" style="display:block;">
+          <div runat="server" id="SETORES" class="container mt-3" visible="false">
   <h2>CADASTRAR SETORES</h2>
   
     <div class="mb-3 mt-3">
       <label for="email">NUMERO DE SETORES:</label>
-      <asp:TextBox runat="server" id="Numerodesetores" TextMode="Number" >
+      <asp:TextBox runat="server" id="Numerodesetores" TextMode="Number" OnTextChanged="Numerodesetores_TextChanged" >
       </asp:TextBox>
     </div>
     <div class="mb-3 mt-3">
@@ -51,13 +51,24 @@
     </div>
       <div class="row">
       <div class="col">
-         <asp:Button runat="server" Text="<< voltar"/>
+         <asp:Button runat="server" Text="<< voltar" OnClick="Unnamed_Click1"/> 
       </div>
       <div class="col">
           <asp:Button runat="server" Text="continuar >>"/>
       </div>
     </div>  
 </div>
+
+        <br/>
+        <div runat="server" id="aqui" visible="false" style="width:1000px;">   
+
+
+        </div>
+       
+    
+  
+
+        
 
     </form>
 </body>

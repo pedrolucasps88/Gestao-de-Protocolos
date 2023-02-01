@@ -22,6 +22,15 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Controle EMPRESA.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl EMPRESA;
+        
+        /// <summary>
         /// Controle nome.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
+        /// Controle SETORES.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SETORES;
+        
+        /// <summary>
         /// Controle Numerodesetores.
         /// </summary>
         /// <remarks>
@@ -56,5 +74,14 @@ namespace Gestão_de_Protocolos.Cadastro {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Numerodesetores;
+        
+        /// <summary>
+        /// Controle aqui.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl aqui;
     }
 }
