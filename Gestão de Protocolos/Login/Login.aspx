@@ -30,13 +30,14 @@
        <br/>
         <label >EMAIL OU NOME:</label>
         <br/>
-       <asp:TextBox ID="txtemail" runat="server" TextMode="email" name="emailorname" CssClass="txtEmail" placeholder="Insira seu email ou nome" value=""></asp:TextBox>
+       <asp:TextBox ID="txtid_setor" runat="server" name="emailorname" CssClass="txtEmail" placeholder="Insira seu email ou nome" value=""></asp:TextBox>
        <br/>
        <label class="label">SENHA:</label>
        <br/>
        <asp:TextBox ID="txtpassword" runat="server" TextMode="password" name="password" CssClass="password" placeholder="senha" value=""></asp:TextBox>
        <br/>
-       <asp:Button ID="btngo" runat="server"  text="VAMOS LÁ" ></asp:Button>
+         <asp:Label runat="server" ForeColor="Red" ID="lbl_aviso"></asp:Label>
+       <asp:Button ID="btngo" runat="server" OnClick="btngo_Click"  text="VAMOS LÁ" ></asp:Button>
     </div>
         </div>
     </div>

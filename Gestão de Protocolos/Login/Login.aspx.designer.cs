@@ -40,13 +40,13 @@ namespace Gestão_de_Protocolos.Login {
         protected global::System.Web.UI.WebControls.TextBox txtCnpj;
         
         /// <summary>
-        /// Controle txtemail.
+        /// Controle txtid_setor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtemail;
+        protected global::System.Web.UI.WebControls.TextBox txtid_setor;
         
         /// <summary>
         /// Controle txtpassword.
@@ -56,6 +56,15 @@ namespace Gestão_de_Protocolos.Login {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpassword;
+        
+        /// <summary>
+        /// Controle lbl_aviso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_aviso;
         
         /// <summary>
         /// Controle btngo.
