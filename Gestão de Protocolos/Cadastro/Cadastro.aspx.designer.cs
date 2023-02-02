@@ -58,13 +58,13 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
-        /// Controle SETORES.
+        /// Controle divSETORES.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SETORES;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSETORES;
         
         /// <summary>
         /// Controle Numerodesetores.
@@ -83,5 +83,23 @@ namespace Gestão_de_Protocolos.Cadastro {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl aqui;
+        
+        /// <summary>
+        /// Controle titu.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label titu;
+        
+        /// <summary>
+        /// Controle Confirm.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Confirm;
     }
 }

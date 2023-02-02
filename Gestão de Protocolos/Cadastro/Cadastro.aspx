@@ -38,7 +38,7 @@
 </div>
 
 
-          <div runat="server" id="SETORES" class="container mt-3" visible="false">
+          <div runat="server" id="divSETORES" class="container mt-3" visible="false">
   <h2>CADASTRAR SETORES</h2>
   
     <div class="mb-3 mt-3">
@@ -54,14 +54,28 @@
          <asp:Button runat="server" Text="<< voltar" OnClick="Unnamed_Click1"/> 
       </div>
       <div class="col">
-          <asp:Button runat="server" Text="continuar >>"/>
+          <asp:Button runat="server" Text="continuar >>" OnClick="Unnamed_Click2"/>
       </div>
     </div>  
 </div>
-
+        
         <br/>
-        <div runat="server" id="aqui" visible="false" style="width:1000px;">   
+        <div runat="server" id="aqui" visible="false" style="width:1000px;height:1000px;margin-left:10%">   
+            <div style='width: 500px;height:300px; margin-left:10%; margin-top:10%; border: 5px solid black; '>
+                
+                <asp:Label Text="SETOR" runat="server" ID="titu" />
 
+      <label for='NomeSetor'>Nome Setor:</label>
+      <input type = 'text' class='form-control' id='setor' placeholder='Nome do Setor' name='Setor'/>
+   
+   
+      <label for='Email'>Email central:</label>
+      <input type = 'email' class='form-control' id='email3' placeholder='Email Aqui' name='Email'/>
+
+      <asp:CheckBox Text = 'Assinatura online?' runat='server' />
+
+                <asp:Button Text="Confirmar" name="CONFIRM" ID="Confirm" runat="server" OnClick="Confirm_Click" />
+           </div>
 
         </div>
        
