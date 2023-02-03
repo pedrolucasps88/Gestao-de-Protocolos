@@ -22,31 +22,22 @@ namespace Gestão_de_Protocolos.Login {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle BtnCadast.
+        /// Controle txtbanco.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCadast;
+        protected global::System.Web.UI.WebControls.TextBox txtbanco;
         
         /// <summary>
-        /// Controle txtCnpj.
+        /// Controle txtid_funcionario.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCnpj;
-        
-        /// <summary>
-        /// Controle txtid_setor.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtid_setor;
+        protected global::System.Web.UI.WebControls.TextBox txtid_funcionario;
         
         /// <summary>
         /// Controle txtpassword.
@@ -58,15 +49,6 @@ namespace Gestão_de_Protocolos.Login {
         protected global::System.Web.UI.WebControls.TextBox txtpassword;
         
         /// <summary>
-        /// Controle lbl_aviso.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_aviso;
-        
-        /// <summary>
         /// Controle btngo.
         /// </summary>
         /// <remarks>
@@ -74,5 +56,14 @@ namespace Gestão_de_Protocolos.Login {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btngo;
+        
+        /// <summary>
+        /// Controle lbl_aviso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_aviso;
     }
 }

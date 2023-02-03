@@ -13,34 +13,36 @@ namespace Gestão_de_Protocolos.Login
     public partial class Login : System.Web.UI.Page
     {
 
-       string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database=empresa_pablo";
-
+      
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
         protected void btngo_Click(object sender, EventArgs e)
         {
-             string id_setor = txtid_setor.Text;
-             string senha_setor = txtpassword.Text;
+
+            string bd = txtbanco.Text;
+            string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database="+bd+"";
+            string id_funcionario = txtid_funcionario.Text;
+             string senha_funcionario = txtpassword.Text;
             
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-
-                string sql = "SELECT COUNT(*) FROM setores WHERE id_setor = @id_setor AND senha_setor = @senha_setor";
+                
+                string sql = "SELECT COUNT(*) FROM funcionarios WHERE id_funcionario = @id_funcionario AND senha_funcionario = @senha_funcionario";
                 var command = new MySqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@id_setor", id_setor);
-                command.Parameters.AddWithValue("@senha_setor", senha_setor);
+                command.Parameters.AddWithValue("@id_funcionario", id_funcionario);
+                command.Parameters.AddWithValue("@senha_funcionario", senha_funcionario);
 
-                int result = (int)command.ExecuteScalar();
+                int result = Convert.ToInt32(command.ExecuteScalar());
                 if (result > 0)
                 {
                     lbl_aviso.Text = "Login realizado com sucesso!";
                 }
                 else
                 {
-                    lbl_aviso.Text ="Id do setor ou senha incorretos.";
+                    lbl_aviso.Text ="Id do funcionário ou senha incorretos.";
                 }
             }
 
