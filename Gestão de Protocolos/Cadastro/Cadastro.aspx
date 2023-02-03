@@ -54,7 +54,7 @@
          <asp:Button runat="server" Text="<< voltar" OnClick="Unnamed_Click1"/> 
       </div>
       <div class="col">
-          <asp:Button runat="server" Text="continuar >>" OnClick="Unnamed_Click2"/>
+          <asp:Button runat="server" ID="CONTINU" Text="continuar >>" OnClick="Unnamed_Click2"/>
       </div>
     </div>  
 </div>
@@ -66,11 +66,11 @@
                 <asp:Label Text="SETOR" runat="server" ID="titu" />
 
       <label for='NomeSetor'>Nome Setor:</label>
-      <input type = 'text' class='form-control' id='setor' placeholder='Nome do Setor' name='Setor'/>
+      <asp:TextBox runat="server"  CssClass='form-control' id='setor' placeholder='Nome do Setor' />
    
    
-      <label for='Email'>Email central:</label>
-      <input type = 'email' class='form-control' id='email3' placeholder='Email Aqui' name='Email'/>
+      <label for='Email'>ID DO SETOR:</label>
+      <asp:TextBox runat="server" TextMode="number" CssClass='form-control' id='id' placeholder='id Aqui' />
 
       <asp:CheckBox Text = 'Assinatura online?' runat='server' />
 
@@ -78,8 +78,8 @@
            </div>
 
         </div>
+
        
-    
   
 
         

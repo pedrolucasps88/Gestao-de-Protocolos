@@ -9,7 +9,7 @@ namespace Gestão_de_Protocolos.Cadastro
 {
     public partial class Cadastro : System.Web.UI.Page
     {
-        public int setores;
+        public static int setores;
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -38,6 +38,7 @@ namespace Gestão_de_Protocolos.Cadastro
             
             aqui.Visible = true;
             setores = Convert.ToInt32(Numerodesetores.Text);
+            CONTINU.Enabled = false;
             
         }
 
@@ -45,6 +46,15 @@ namespace Gestão_de_Protocolos.Cadastro
         {
 
             setores = setores - 1;
+
+            setor.Text = "";
+            id.Text = "";
+            if (setores==0)
+            {
+                setor.Text = "deu certo cabação";
+            }
+
+
 
         }
     }
