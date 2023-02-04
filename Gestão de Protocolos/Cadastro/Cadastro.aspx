@@ -15,16 +15,18 @@
   <h2>CADASTRAR EMPRESA</h2>
   
     <div class="mb-3 mt-3">
-      <label for="email">NOME DA EMPRESA:</label>
-      <asp:TextBox runat="server" type="email" class="form-control" id="nome" placeholder="Enter email" name="email"></asp:TextBox>
+      <label">NOME DA EMPRESA:</label>
+      <asp:TextBox runat="server" class="form-control" id="nome_empresa" placeholder="Digite o nome da empresa" name="nome_empresa"></asp:TextBox>
     </div>
     <div class="mb-3 mt-3">
-      <label for="email">CNPJ:</label>
-      <asp:TextBox runat="server" type="email" class="form-control" id="cnpj" placeholder="Enter email" name="email"></asp:TextBox>
+
+      <label>CNPJ:</label>
+      <asp:TextBox runat="server" id="txt_empresa_cnpj" placeholder="Digite o CNPJ da Empressa" value = " " name="txt_empresa_cnpj"></asp:TextBox>
     </div>
+
     <div class="mb-3">
-      <label for="pwd">EMAIL:</label>
-     <asp:TextBox runat="server" type="password" class="form-control" id="email" placeholder="Enter password" name="pswd"></asp:TextBox>
+      <label >EMAIL:</label>
+     <asp:TextBox runat="server" type="email" class="form-control" id="email" placeholder="Digite o email da empresa" name="email"></asp:TextBox>
     </div>
    
     <div class="row">
@@ -32,7 +34,7 @@
       <asp:CheckBox runat="server" class="form-check-input" type="checkbox" name="remember" Text="Confirmo que tudo é veridico" />  
       </div>
       <div class="col">
-          <asp:Button Text="Confirmar" runat="server" OnClick="Unnamed_Click" />
+          <asp:Button Text="Confirmar" runat="server" OnClick="criarbd_Click" />
       </div>
     </div>  
 </div>
@@ -51,10 +53,10 @@
     </div>
       <div class="row">
       <div class="col">
-         <asp:Button runat="server" Text="<< voltar" OnClick="Unnamed_Click1"/> 
+         <asp:Button runat="server"  Id= "voltar" Text ="<< voltar" OnClick="voltar_Click"/> 
       </div>
       <div class="col">
-          <asp:Button runat="server" ID="CONTINU" Text="continuar >>" OnClick="Unnamed_Click2"/>
+          <asp:Button runat="server" ID="continuar" Text="continuar >>" OnClick="continuar_Click"/>
       </div>
     </div>  
 </div>
@@ -66,15 +68,17 @@
                 <asp:Label Text="SETOR" runat="server" ID="titu" />
 
       <label for='NomeSetor'>Nome Setor:</label>
-      <asp:TextBox runat="server"  CssClass='form-control' id='setor' placeholder='Nome do Setor' />
+      <asp:TextBox runat="server"  CssClass='form-control' id='nome_Setor' placeholder='Nome do Setor' />
    
    
-      <label for='Email'>ID DO SETOR:</label>
-      <asp:TextBox runat="server" TextMode="number" CssClass='form-control' id='id' placeholder='id Aqui' />
+      <label>ID DO SETOR:</label>
+      <asp:TextBox runat="server" TextMode="number" CssClass='form-control' id='id_SETOR' placeholder='Digite o Id do setor' />
 
       <asp:CheckBox Text = 'Assinatura online?' runat='server' />
 
                 <asp:Button Text="Confirmar" name="CONFIRM" ID="Confirm" runat="server" OnClick="Confirm_Click" />
+                  <br />
+        <asp:Label runat="server" ForeColor="Red" ID="lbl_aviso"></asp:Label>
            </div>
 
         </div>

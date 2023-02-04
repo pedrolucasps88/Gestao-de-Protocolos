@@ -31,22 +31,22 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl EMPRESA;
         
         /// <summary>
-        /// Controle nome.
+        /// Controle nome_empresa.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nome;
+        protected global::System.Web.UI.WebControls.TextBox nome_empresa;
         
         /// <summary>
-        /// Controle cnpj.
+        /// Controle txt_empresa_cnpj.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cnpj;
+        protected global::System.Web.UI.WebControls.TextBox txt_empresa_cnpj;
         
         /// <summary>
         /// Controle email.
@@ -76,13 +76,22 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.WebControls.TextBox Numerodesetores;
         
         /// <summary>
-        /// Controle CONTINU.
+        /// Controle voltar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CONTINU;
+        protected global::System.Web.UI.WebControls.Button voltar;
+        
+        /// <summary>
+        /// Controle continuar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button continuar;
         
         /// <summary>
         /// Controle aqui.
@@ -103,22 +112,22 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.WebControls.Label titu;
         
         /// <summary>
-        /// Controle setor.
+        /// Controle nome_Setor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox setor;
+        protected global::System.Web.UI.WebControls.TextBox nome_Setor;
         
         /// <summary>
-        /// Controle id.
+        /// Controle id_SETOR.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id;
+        protected global::System.Web.UI.WebControls.TextBox id_SETOR;
         
         /// <summary>
         /// Controle Confirm.
@@ -128,5 +137,14 @@ namespace Gestão_de_Protocolos.Cadastro {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Confirm;
+        
+        /// <summary>
+        /// Controle lbl_aviso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_aviso;
     }
 }
