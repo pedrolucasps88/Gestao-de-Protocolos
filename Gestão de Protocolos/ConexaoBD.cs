@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Gestao_de_Protocolos
+namespace ConexaoBD
 {
     public partial class SiteMaster : MasterPage
     {
-        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;Database=empresas;";
+        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;Database=DadosCadastroGenerico";
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
         public static void ExibirAlert(Page page, string mensagem)
         {
             page.ClientScript.RegisterStartupScript(
@@ -23,6 +23,5 @@ namespace Gestao_de_Protocolos
                  "<script language='javascript'>alert('" + mensagem + "');</script>"
               );
         }
-
     }
 }
