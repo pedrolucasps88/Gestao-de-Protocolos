@@ -23,11 +23,17 @@
         <label style="margin-left:100px">LOGIN</label>
         <br /><br />
 
-          <label class="label">Empresa:</label>
+          <label class="label">Nome empresa:</label>
        <br/>
-       <asp:TextBox ID="txtbanco" runat="server" placeholder="Insira o CNPJ da empresa" value=""></asp:TextBox>
+       <asp:TextBox ID="txtbanco" runat="server" placeholder="Insira o nome da empresa conforme foi cadastrado" value=""></asp:TextBox>
        <br/>
         
+        <label class="label">CNPJ:</label>
+       <br/>
+       <asp:TextBox ID="txt_cnpj" runat="server" placeholder="Insira o CNPJ da empresa" value=""></asp:TextBox>
+       <br/>
+
+
         <label >Id Funcionário:</label>
         <br/>
        <asp:TextBox ID="txtid_funcionario" runat="server" name="id_funcionario" CssClass="id_funcionario" placeholder="Insira seu id" value=""></asp:TextBox>
@@ -39,6 +45,8 @@
        <asp:Button ID="btngo" runat="server" OnClick="btngo_Click"  text="Entrar" ></asp:Button>
         <br />
         <asp:Label runat="server" ForeColor="Red" ID="lbl_aviso"></asp:Label>
+        <br />
+        <asp:Label runat="server" ForeColor="Red" ID="lbl_aviso2"></asp:Label>
     </div>
         </div>
     </div>

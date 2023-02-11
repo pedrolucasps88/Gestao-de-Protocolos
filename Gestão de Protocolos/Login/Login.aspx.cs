@@ -25,7 +25,30 @@ namespace Gestão_de_Protocolos.Login
             string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database="+bd+"";
             string id_funcionario = txtid_funcionario.Text;
              string senha_funcionario = txtpassword.Text;
-            
+            string cnpj = txt_cnpj.Text;
+            string conexao_2 = "server = localhost; user id = root; password =; Database= empresas_cadastradas";
+
+
+            using (var connection = new MySqlConnection(conexao_2))
+            {
+                connection.Open();
+
+                string procurar = "SELECT COUNT(*) FROM empresas WHERE cnpj = @cnpj";
+                var commando_2 = new MySqlCommand(procurar, connection);
+                commando_2.Parameters.AddWithValue("@cnpj", cnpj);
+
+                int resultado_1 = Convert.ToInt32(commando_2.ExecuteScalar());
+                if (resultado_1 > 0)
+                {
+                    lbl_aviso.Text = "Empresa encontrada no sistema!";
+                }
+                else
+                {
+                    lbl_aviso.Text = "Empresa não encontrada no sistema!";
+                }
+            }
+
+
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
@@ -38,13 +61,20 @@ namespace Gestão_de_Protocolos.Login
                 int result = Convert.ToInt32(command.ExecuteScalar());
                 if (result > 0)
                 {
-                    lbl_aviso.Text = "Login realizado com sucesso!";
+                    lbl_aviso2.Text = "Login realizado com sucesso!";
                 }
                 else
                 {
-                    lbl_aviso.Text ="Id do funcionário ou senha incorretos.";
+                    lbl_aviso2.Text ="Id do funcionário ou senha incorretos.";
                 }
             }
+
+
+
+
+         
+
+          
 
 
 

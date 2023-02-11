@@ -23,6 +23,7 @@ namespace Gestão_de_Protocolos.Cadastro
         {
             EMPRESA.Visible = false;
            divSETORES.Visible = true;
+            string cnpj =txt_empresa_cnpj.Text;
             string bd = nome_empresa.Text;
             string connectionString = "server=localhost;user id=root;password=;";
             string createDbQuery = $"CREATE DATABASE IF NOT EXISTS  {bd};";
@@ -31,6 +32,31 @@ namespace Gestão_de_Protocolos.Cadastro
                                         id_setor INT (2) PRIMARY KEY,
                                         nome_setor VARCHAR (200)
                                     );";
+
+            string conexao_2 = "server = localhost; user id = root; password =; Database= empresas_cadastradas";
+          
+
+            using (var connection = new MySqlConnection(conexao_2))
+            {
+                connection.Open();
+                string inserir = $"INSERT INTO empresas ( cnpj, nome_empresa) VALUES ('{cnpj}' ,'{bd}')";
+                using (var command = new MySqlCommand(inserir, connection))
+                {
+                    int result = command.ExecuteNonQuery();
+                    if (result == 1)
+                    {
+                        lbl_bd_aviso.Text = "Empresa Registrada no sistema!";
+
+                    }
+                    else
+                    {
+                        lbl_bd_aviso.Text = "Erro ao registrar a empresa no sistema!";
+
+                    }
+                }
+            }
+
+
 
 
             using (var connection = new MySqlConnection(connectionString))

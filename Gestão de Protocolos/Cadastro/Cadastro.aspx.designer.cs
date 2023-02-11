@@ -94,6 +94,15 @@ namespace Gestão_de_Protocolos.Cadastro {
         protected global::System.Web.UI.WebControls.Button continuar;
         
         /// <summary>
+        /// Controle lbl_bd_aviso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_bd_aviso;
+        
+        /// <summary>
         /// Controle aqui.
         /// </summary>
         /// <remarks>

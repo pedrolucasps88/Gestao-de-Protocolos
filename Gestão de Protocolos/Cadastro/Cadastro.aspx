@@ -57,7 +57,9 @@
       </div>
       <div class="col">
           <asp:Button runat="server" ID="continuar" Text="continuar >>" OnClick="continuar_Click"/>
+          <br />
       </div>
+     <asp:Label runat="server" ForeColor="Red" ID="lbl_bd_aviso"></asp:Label>
     </div>  
 </div>
         
