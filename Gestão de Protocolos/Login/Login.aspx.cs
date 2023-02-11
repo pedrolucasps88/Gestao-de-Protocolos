@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using MySqlConnector;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using Serilog;
 
 namespace Gestão_de_Protocolos.Login
 {
@@ -25,26 +26,42 @@ namespace Gestão_de_Protocolos.Login
             string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database="+bd+"";
             string id_funcionario = txtid_funcionario.Text;
              string senha_funcionario = txtpassword.Text;
-            
-            using (var connection = new MySqlConnection(connectionString))
+            Log.Logger = new LoggerConfiguration().WriteTo.File("C:\\Users\\lab201\\Desktop\\Nova pasta (8)\\Gestao-de-Protocolos\\myapp.txt", restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Hour).CreateLogger();
+            try
             {
-                connection.Open();
-                
-                string sql = "SELECT COUNT(*) FROM funcionarios WHERE id_funcionario = @id_funcionario AND senha_funcionario = @senha_funcionario";
-                var command = new MySqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@id_funcionario", id_funcionario);
-                command.Parameters.AddWithValue("@senha_funcionario", senha_funcionario);
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    Log.Information("Iniciando pesquisa no Banco de Dados!");
+                    string sql = "SELECT COUNT(*) FROM funcionarios WHERE id_funcionario = @id_funcionario AND senha_funcionario = @senha_funcionario";
+                    var command = new MySqlCommand(sql, connection);
+                    command.Parameters.AddWithValue("@id_funcionario", id_funcionario);
+                    command.Parameters.AddWithValue("@senha_funcionario", senha_funcionario);
+                    Log.Information("verificação dos parametros!");
 
-                int result = Convert.ToInt32(command.ExecuteScalar());
-                if (result > 0)
-                {
-                    lbl_aviso.Text = "Login realizado com sucesso!";
-                }
-                else
-                {
-                    lbl_aviso.Text ="Id do funcionário ou senha incorretos.";
+                    int result = Convert.ToInt32(command.ExecuteScalar());
+                    if (result > 0)
+                    {
+                        lbl_aviso.Text = "Login realizado com sucesso!";
+                    }
+                    else
+                    {
+                        lbl_aviso.Text = "Id do funcionário ou senha incorretos.";
+                    }
+                    Log.Information("verificação concluida!");
+                    Log.Information("finalizando processo de login!");
                 }
             }
+            catch (Exception erro)
+            {
+
+                Log.Error("Deu ruim" + erro.Message);
+            }
+            finally
+            {
+                Log.Warning("FIM!");
+            }
+
 
 
 
