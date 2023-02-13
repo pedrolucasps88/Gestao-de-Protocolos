@@ -31,6 +31,15 @@ namespace Gestão_de_Protocolos.Login {
         protected global::System.Web.UI.WebControls.TextBox txtbanco;
         
         /// <summary>
+        /// Controle txt_cnpj.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_cnpj;
+        
+        /// <summary>
         /// Controle txtid_funcionario.
         /// </summary>
         /// <remarks>
@@ -65,5 +74,14 @@ namespace Gestão_de_Protocolos.Login {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_aviso;
+        
+        /// <summary>
+        /// Controle lbl_aviso2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_aviso2;
     }
 }

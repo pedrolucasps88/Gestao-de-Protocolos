@@ -320,3 +320,104 @@ D:\pablo\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protoco
 D:\pablo\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CopyComplete
 D:\pablo\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.dll
 D:\pablo\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.pdb
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.dll.config
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.pdb
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.exe
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.exe.config
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.rsp
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.exe
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.exe.config
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.rsp
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.AppContext.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Collections.Immutable.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Console.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Compression.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.FileSystem.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Pipes.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Reflection.Metadata.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.AccessControl.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Claims.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.ValueTuple.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XPath.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.exe
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.exe.config
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.rsp
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\VBCSCompiler.exe
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\VBCSCompiler.exe.config
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Antlr3.Runtime.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.jQuery.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.Streams.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Hash.xxHash.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.Web.Infrastructure.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\MySqlConnector.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Buffers.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Memory.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Numerics.Vectors.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Threading.Tasks.Extensions.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Web.Optimization.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Windows.Forms.Ribbon35.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ubiety.Dns.Core.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\WebGrease.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\ZstdNet.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.pdb
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.Streams.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Hash.xxHash.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\MySqlConnector.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Buffers.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Memory.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Numerics.Vectors.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Threading.Tasks.Extensions.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Web.Optimization.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Antlr3.Runtime.pdb
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\pt-br\System.Web.Optimization.resources.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csprojAssemblyReference.cache
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CoreCompileInputs.cache
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CopyComplete
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.dll
+E:\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.pdb
