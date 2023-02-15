@@ -1,0 +1,45 @@
+https://talkjs.com/dashboard/app/tUEs5jJ8/settings
+
+interessante mas só versão gratuita
+
+
+////////////////////////////////////////
+https://www.weavy.com/free-chat
+
+tem envio de arquivo e a principio se diz gratuito
+
+
+fav*
+///////////////////////////////////////
+https://www.mirrorfly.com/free-chat-api.php?utm_source=MF-Free-Chat-API&utm_medium=PPC&utm_content=Google-Search-FTA-Ads-Var1&utm_source=adwords&utm_term=free%20chat%20api%20for%20website&utm_campaign=MF+-+Free+Chat+-+FTA&utm_medium=ppc&hsa_cam=18878143091&hsa_acc=2843000055&hsa_src=g&hsa_kw=free%20chat%20api%20for%20website&hsa_tgt=kwd-419581744475&hsa_mt=e&hsa_grp=144135145675&hsa_net=adwords&hsa_ad=634180146676&hsa_ver=3&gclid=Cj0KCQiAorKfBhC0ARIsAHDzslvDh45d0bMUImohe_0SuxsNaOXkx2DMkorJ_qnPB39_O085TPoyNqUaAouCEALw_wcB
+
+api
+
+///////////////////////////////////////
+https://www.jivochat.com.br/docs/chat/
+
+api de chat
+
+
+/////////////////////////////////
+***********ERRO***********
+ error  : Não há provedor de propriedades de projeto para "Persistence = ProjectFileWithInterceptionViaSnapshot".
+C:\Users\cynth\Desktop\teste\SignalRSimpleChat\SignalRSimpleChat.csproj : error  : O arquivo não pode ser aberto. Não é possível localizar o .NET SDK. Verifique se ele está instalado, seu PATH está configurado para a arquitetura correta e se a versão especificada em global.json (se houver) corresponde à versão instalada.
+**************************
+//////////////////////////////////////
+https://github.com/danroth27/BlazorChat
+
+testar senai
+
+
+
+/////////////////////////////
+https://learn.microsoft.com/pt-br/aspnet/signalr/overview/getting-started/tutorial-getting-started-with-signalr-and-mvc
+
+interessante envios diretos porem sem envio de arquivos teria que implementar
+
+
+/////////////////////////
+https://www.devmedia.com.br/chat/7452
+
+-basico mas funcional teria que implementar com envios de arquivos
