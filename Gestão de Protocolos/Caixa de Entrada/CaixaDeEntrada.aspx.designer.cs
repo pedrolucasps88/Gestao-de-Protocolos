@@ -7,9 +7,9 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Gestão_de_Protocolos {
+namespace Gestão_de_Protocolos.Caixa_de_Entrada {
     
     
-    public partial class _Default {
+    public partial class CaixaDeEntrada {
     }
 }

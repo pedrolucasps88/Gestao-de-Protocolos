@@ -161,6 +161,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Cadastro\Cadastro.aspx" />
+    <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -210,6 +211,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Updates.txt" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -232,6 +234,13 @@
     </Compile>
     <Compile Include="Cadastro\Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa de Entrada\CaixaDeEntrada.aspx.cs">
+      <DependentUpon>CaixaDeEntrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caixa de Entrada\CaixaDeEntrada.aspx.designer.cs">
+      <DependentUpon>CaixaDeEntrada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\Empresa.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -273,6 +282,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="TelaPrincipal\TelaPrincipal.aspx.cs">
+      <DependentUpon>TelaPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal\TelaPrincipal.aspx.designer.cs">
+      <DependentUpon>TelaPrincipal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,7 +299,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Tela Interna\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
