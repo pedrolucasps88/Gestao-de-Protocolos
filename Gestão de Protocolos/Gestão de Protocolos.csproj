@@ -298,6 +298,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Anexos\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

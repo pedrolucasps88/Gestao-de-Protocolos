@@ -23,20 +23,21 @@
 
             <div class="form-group">
                 <label for="subject">Assunto:</label>
-                <input type="text" class="form-control" id="subject" placeholder="Digite o assunto da mensagem">
+                <asp:TextBox runat="server" ID="assuntos" class="form-control" placeholder="Digite o assunto da mensagem" />
             </div>
 
             <div class="form-group">
                 <label for="body">Mensagem:</label>
-                <textarea class="form-control" id="body" rows="5"></textarea>
+              
+                <asp:TextBox runat="server" ID="mensagema" class="form-control" TextMode="MultiLine" Rows="5" Placeholder="Digite a mensagem" />  
             </div>
 
             <div class="form-group">
                 <label for="attachment">Anexar arquivo:</label>
-                <input type="file" class="form-control-file" id="attachment">
+                <asp:FileUpload runat="server" ID="arqui"/>              
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary"></asp:Button>
         </form>
     </div>
 
