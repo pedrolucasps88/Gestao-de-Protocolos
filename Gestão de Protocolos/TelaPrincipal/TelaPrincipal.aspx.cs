@@ -39,9 +39,10 @@ namespace Gestão_de_Protocolos.TelaPrincipal
 
 
             connection.Open();
-                var comando = new MySqlCommand($@"INSERT INTO chat (matricula_remetente,matricula_destinatario,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@mensagem,@anexo,@hora)", connection);
+                var comando = new MySqlCommand($@"INSERT INTO chat (matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@assunto,@mensagem,@anexo,@hora)", connection);
                 comando.Parameters.Add(new MySqlParameter("matricula_remetente", matricularemetente));
                 comando.Parameters.Add(new MySqlParameter("matricula_destinatario", matriculadestinatario));
+                comando.Parameters.Add(new MySqlParameter("assunto", assunto));
                 comando.Parameters.Add(new MySqlParameter("mensagem", mensagem));
                 comando.Parameters.Add(new MySqlParameter("anexo", arquivo));
                 comando.Parameters.Add(new MySqlParameter("hora", horaagora));

@@ -243,6 +243,7 @@
       <DependentUpon>CaixaDeEntrada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\Empresa.cs" />
+    <Compile Include="Classes\Mensagem.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

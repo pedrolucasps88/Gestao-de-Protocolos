@@ -21,36 +21,23 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Remetente</th>
-                            <th scope="col">Assunto</th>
-                            <th scope="col">Data</th>
-                            <th scope="col">Anexos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>joao@gmail.com</td>
-                            <td>Convite para reunião</td>
-                            <td>23/02/2023</td>
-                            <td><a href="#">arquivo.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td>maria@hotmail.com</td>
-                            <td>Pedido de orçamento</td>
-                            <td>22/02/2023</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>pedro@yahoo.com.br</td>
-                            <td>Confirmação de pagamento</td>
-                            <td>20/02/2023</td>
-                            <td><a href="#">recibo.pdf</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="">
+    <Columns>
+        <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
+        <asp:BoundField DataField="Setor" HeaderText="Setor" />
+        <asp:BoundField DataField="assunto" HeaderText="assunto" />
+        <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
+        <asp:TemplateField HeaderText="Anexo">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="lnkDownload" Text = "Download" CommandArgument = '<%# Eval("Value") %>' runat="server" ></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
+        <asp:BoundField DataField="anexo" HeaderText="Idade"  />
+        <asp:BoundField DataField="hora" HeaderText="Idade" />
+    </Columns>
+</asp:GridView>
+
+
             </div>
         </div>
     </div>
