@@ -32,7 +32,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                     recebidos.remetente = reader.GetInt32(0);
                     recebidos.assunto = reader.GetString(1);
                     recebidos.mensagenzinha = reader.GetString(2);
-                    recebidos.anexo = reader.GetString(3);
+                    recebidos.anexo = "Anexos/" + reader.GetString(3);
                     recebidos.data = reader.GetDateTime(4);
                     mensagemrece.Add(recebidos);
                 }

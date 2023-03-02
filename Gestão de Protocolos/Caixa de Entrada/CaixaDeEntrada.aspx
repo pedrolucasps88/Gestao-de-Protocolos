@@ -29,7 +29,7 @@
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
         <asp:TemplateField HeaderText="Anexo">
                     <ItemTemplate>
-                        <asp:LinkButton ID="lnkDownload" Text = "Download" CommandArgument = '<%# Eval("Value") %>' runat="server" ></asp:LinkButton>
+                        <asp:LinkButton ID="lnkDownload" Text = "Download"  OnClientClick="window.open(<%# Eval("Value") %>, '_blank');" runat="server" ></asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
         <asp:BoundField DataField="anexo" HeaderText="Idade"  />

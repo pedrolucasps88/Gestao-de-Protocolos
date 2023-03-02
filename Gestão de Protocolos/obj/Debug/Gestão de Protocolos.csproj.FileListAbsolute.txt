@@ -745,3 +745,109 @@ C:\Users\cynth\Desktop\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj
 C:\Users\cynth\Desktop\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CopyComplete
 C:\Users\cynth\Desktop\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.dll
 C:\Users\cynth\Desktop\Nova pasta\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.pdb
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.dll.config
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Gestão de Protocolos.pdb
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.exe
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.exe.config
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csc.rsp
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.exe
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.exe.config
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\csi.rsp
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.AppContext.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Console.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Compression.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.IO.Pipes.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Claims.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.ValueTuple.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XPath.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.exe
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.exe.config
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\vbc.rsp
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Antlr3.Runtime.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Hash.xxHash.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\MySqlConnector.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.Sinks.File.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Buffers.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Memory.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Numerics.Vectors.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Web.Optimization.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Windows.Forms.Ribbon35.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ubiety.Dns.Core.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\WebGrease.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\ZstdNet.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.pdb
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\K4os.Hash.xxHash.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\MySqlConnector.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.Sinks.File.pdb
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.Sinks.File.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Buffers.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Memory.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Numerics.Vectors.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Web.Optimization.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Antlr3.Runtime.pdb
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csprojAssemblyReference.cache
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CoreCompileInputs.cache
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.csproj.CopyComplete
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.dll
+C:\Users\LAB201.SERVEDUC\Desktop\Nova pasta (3)\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.pdb
