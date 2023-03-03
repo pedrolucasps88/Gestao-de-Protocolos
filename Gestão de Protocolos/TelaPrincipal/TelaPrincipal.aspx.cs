@@ -15,12 +15,21 @@ namespace Gestão_de_Protocolos.TelaPrincipal
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["usuariologado"]==null)
+            {
+                Response.Redirect("Login.aspx");
 
-
+            }
+            else
+            {
+                Session["usuariologado"].ToString();
+            }
+           
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
+
             DateTime horaagora = DateTime.Today;
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             string arquivo = "";
@@ -28,18 +37,18 @@ namespace Gestão_de_Protocolos.TelaPrincipal
             {
                 var FileExtension = Path.GetExtension(arqui.PostedFile.FileName).Substring(1);
                 arquivo = Guid.NewGuid() + "." + FileExtension;
-                arqui.SaveAs("Anexos/" + arquivo);
+                arqui.SaveAs(Server.MapPath("~") + "/Anexos/" + arquivo);
             }
             
-
+            
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
-            int matricularemetente=1;
+            int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString());
             int matriculadestinatario=2;
 
 
             connection.Open();
-                var comando = new MySqlCommand($@"INSERT INTO chat (matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@assunto,@mensagem,@anexo,@hora)", connection);
+                var comando = new MySqlCommand($@"INSERT INTO envio (matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@assunto,@mensagem,@anexo,@hora)", connection);
                 comando.Parameters.Add(new MySqlParameter("matricula_remetente", matricularemetente));
                 comando.Parameters.Add(new MySqlParameter("matricula_destinatario", matriculadestinatario));
                 comando.Parameters.Add(new MySqlParameter("assunto", assunto));

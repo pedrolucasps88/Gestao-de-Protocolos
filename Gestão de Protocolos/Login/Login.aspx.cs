@@ -17,7 +17,7 @@ namespace Gestão_de_Protocolos.Login
       
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["usuariologado"] = txtid_funcionario.Text;
         }
         protected void btngo_Click(object sender, EventArgs e)
         {

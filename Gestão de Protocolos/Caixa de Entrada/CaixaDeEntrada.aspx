@@ -21,19 +21,20 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="">
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowDataBound="GridView1_RowDataBound">
     <Columns>
         <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
-        <asp:BoundField DataField="Setor" HeaderText="Setor" />
+       
         <asp:BoundField DataField="assunto" HeaderText="assunto" />
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
-        <asp:TemplateField HeaderText="Anexo">
+        <asp:BoundField DataField="anexo" HeaderText="Anexo" />
+   <%--     <asp:TemplateField HeaderText="Anexo">
                     <ItemTemplate>
-                        <asp:LinkButton ID="lnkDownload" Text = "Download"  OnClientClick="window.open(<%# Eval("Value") %>, '_blank');" runat="server" ></asp:LinkButton>
+                        <asp:LinkButton ID="lnkDownload" Text = "Download" OnClick="lnkDownload_Click" runat="server" ></asp:LinkButton>
                     </ItemTemplate>
-                </asp:TemplateField>
-        <asp:BoundField DataField="anexo" HeaderText="Idade"  />
-        <asp:BoundField DataField="hora" HeaderText="Idade" />
+                </asp:TemplateField>--%>
+        
+        <asp:BoundField DataField="hora" HeaderText="hora" />
     </Columns>
 </asp:GridView>
 
