@@ -33,16 +33,19 @@ namespace Gestão_de_Protocolos.Login
                 {
                     connection.Open();
                     Log.Information("Iniciando pesquisa no Banco de Dados!");
-                    string sql = "SELECT COUNT(*) FROM funcionarios WHERE id_funcionario = @id_funcionario AND senha_funcionario = @senha_funcionario";
+                    string sql = "SELECT COUNT(*) FROM empresa WHERE matricula_func = @matricula_func AND senha = @senha";
                     var command = new MySqlCommand(sql, connection);
-                    command.Parameters.AddWithValue("@id_funcionario", id_funcionario);
-                    command.Parameters.AddWithValue("@senha_funcionario", senha_funcionario);
+                    command.Parameters.AddWithValue("@matricula_func", Convert.ToInt32(id_funcionario));
+                    command.Parameters.AddWithValue("@senha", Convert.ToInt32(senha_funcionario));
                     Log.Information("verificação dos parametros!");
 
                     int result = Convert.ToInt32(command.ExecuteScalar());
                     if (result > 0)
                     {
                         lbl_aviso.Text = "Login realizado com sucesso!";
+                        Session["usuariologado"] = txtid_funcionario.Text;
+                        //Response.Redirect("../TelaPrincipal/TelaPrincipal.aspx");
+                        Response.Redirect("../Caixa de Entrada/CaixaDeEntrada.aspx");
                     }
                     else
                     {

@@ -44,7 +44,7 @@ namespace Gestão_de_Protocolos.TelaPrincipal
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
             int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString());
-            int matriculadestinatario=2;
+            int matriculadestinatario=10;
 
 
             connection.Open();
