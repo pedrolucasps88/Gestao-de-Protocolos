@@ -15,15 +15,15 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["usuariologado"] == null)
-            {
-                Response.Redirect("Login.aspx");
+            //if (Session["usuariologado"] == null)
+            //{
+            //    Response.Redirect("Login.aspx");
 
-            }
-            else
-            {
-                Session["usuariologado"].ToString();
-            }
+            //}
+            //else
+            //{
+            //    Session["usuariologado"].ToString();
+            //}
 
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             connection.Open();

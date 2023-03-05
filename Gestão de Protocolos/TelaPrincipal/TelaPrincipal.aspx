@@ -9,11 +9,18 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="margin-left:35%;background-color:lightgray;width:360px;height:380px">
         <form>
             <h1>Enviar mensagem</h1>
 
             <div class="form-group">
+                <label for="to">Para:</label>
+                <asp:DropDownList runat="server">
+                    <asp:ListItem Text="setor1" />
+                    <asp:ListItem Text="setor2" />
+                </asp:DropDownList>
+            </div>
+             <div class="form-group">
                 <label for="to">Para:</label>
                 <asp:DropDownList runat="server">
                     <asp:ListItem Text="setor1" />
@@ -37,7 +44,7 @@
                 <asp:FileUpload runat="server" ID="arqui"/>              
             </div>
 
-            <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary"></asp:Button>
+            <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary" style="background-color:black;width:100px;height:30px;font-size:16px;border-radius: 30px"></asp:Button>
         </form>
     </div>
 
