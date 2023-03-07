@@ -2,38 +2,36 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <html>
-<head>
-    <title>Enviar Arquivos e Mensagens</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-        <div class="container">
+  
+
+         <div class="container body-content">
+            <div class="jumbotron">
+                <h1>Welcome to File Sharing Site!</h1>
+                <p class="lead">We make it easy to send and receive files securely and quickly.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Get started today</a></p>
+            </div>
             <div class="row">
-                <div class="col-sm-6">
-                    <h2>Enviar Arquivos</h2>
-                    <div class="form-group">
-                        <label for="fileUpload">Escolher arquivo</label>
-                        <input type="file" id="fileUpload" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="col-md-4">
+                    <h2>Upload files with ease</h2>
+                    <p>Our simple and intuitive interface makes it easy to upload your files and send them securely to your intended recipient.</p>
+                <asp:LinkButton Text="Envio" runat="server" class="btn btn-info" ID="Envio" OnClick="Envio_Click" href=""/>
                 </div>
-                <div class="col-sm-6">
-                    <h2>Enviar Mensagem</h2>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                <div class="col-md-4">
+                    <h2>Receive files instantly</h2>
+                    <p>With our fast and reliable servers, you can receive your files in seconds, no matter where you are in the world.</p>
+               <asp:LinkButton Text="Caixa de entrada" runat="server" class="btn btn-warning" ID="CaixaE" OnClick="CaixaE_Click" href="/Caixa de Entrada/CaixaDeEntrada.aspx"/>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="col-md-4">
+                    <h2>Secure and reliable</h2>
+                    <p>We take your privacy and security seriously, using the latest encryption and security measures to ensure your files are safe and secure.</p>
+                    <asp:Button Text="Sobre nós e o site" runat="server" class="btn btn-dark" href="#"/>
                 </div>
             </div>
+            <hr />
         </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+        <script src="Scripts/jquery-3.3.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+
 
 </asp:Content>

@@ -13,5 +13,15 @@ namespace Gestão_de_Protocolos
         {
 
         }
+
+        protected void Envio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/TelaEnvio/TelaDeEnvio.aspx");
+        }
+
+        protected void CaixaE_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Caixa de Entrada/CaixaDeEntrada.aspx");
+        }
     }
 }
