@@ -21,7 +21,7 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowDataBound="GridView1_RowDataBound">
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound">
     <Columns>
         <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
        
@@ -35,6 +35,7 @@
                 </asp:TemplateField>--%>
         
         <asp:BoundField DataField="hora" HeaderText="hora" />
+        <asp:ButtonField ButtonType="Link" CommandName="AssinaturaDigital"  ControlStyle-CssClass="btn btn-success"  Text="ASSINATURA DIGITAL" />  
     </Columns>
 </asp:GridView>
 

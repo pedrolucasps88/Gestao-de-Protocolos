@@ -40,6 +40,9 @@
 		 <asp:FileUpload ID="fileUpload" runat="server" />
 		 <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary"></asp:Button>
             <asp:Label Text="text" runat="server" ID="lblAssinatura"/>
+
+            <asp:LinkButton runat="server" ID="lnkDownload" Visible="false" ></asp:LinkButton>
+            
 	</form>
             </div>
 		 

@@ -29,7 +29,7 @@ namespace Gestão_de_Protocolos.TelaPrincipal
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
-
+            var x = testee.Text;
             DateTime horaagora = DateTime.Today;
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             string arquivo = "";
@@ -43,8 +43,8 @@ namespace Gestão_de_Protocolos.TelaPrincipal
             
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
-            int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString());
-            int matriculadestinatario=10;
+            int matricularemetente = 4/*Convert.ToInt32(Session["usuariologado"].ToString())*/;
+            int matriculadestinatario=3;
 
 
             connection.Open();
@@ -59,6 +59,12 @@ namespace Gestão_de_Protocolos.TelaPrincipal
                 connection.Close();
             
             
+        }
+
+        protected void btnteste_Click(object sender, EventArgs e)
+        {
+            string assunto = assuntos.Text;
+
         }
     }
 }

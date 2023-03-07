@@ -7,13 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Gestão_de_Protocolos
-{
-
-
-    public partial class Teste
-    {
-
+namespace Gestão_de_Protocolos {
+    
+    
+    public partial class Teste {
+        
         /// <summary>
         /// Controle fileUpload.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Gestão_de_Protocolos
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fileUpload;
-
+        
         /// <summary>
         /// Controle lblAssinatura.
         /// </summary>
@@ -31,5 +29,14 @@ namespace Gestão_de_Protocolos
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAssinatura;
+        
+        /// <summary>
+        /// Controle lnkDownload.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkDownload;
     }
 }
