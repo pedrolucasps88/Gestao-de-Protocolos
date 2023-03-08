@@ -19,19 +19,19 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["usuariologado"] == null)
-            {
-                Response.Redirect("Login.aspx");
+            //if (Session["usuariologado"] == null)
+            //{
+            //    Response.Redirect("../Login.aspx");
 
-            }
-            else
-            {
-                Session["usuariologado"].ToString();
-            }
+            //}
+            //else
+            //{
+            //    Session["usuariologado"].ToString();
+            //}
 
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             connection.Open();
-            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM envio WHERE `matricula_destinatario`= " + Session["usuariologado"].ToString(), connection);
+            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM envio WHERE `matricula_destinatario`= " +4 /*Session["usuariologado"].ToString()*/, connection);
 
 
             List<Mensagem> mensagemrece = new List<Mensagem>();
@@ -111,6 +111,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                             this.GetType(),
                             "Window" + Guid.NewGuid(),
                             "<script language='javascript'>window.open('" + "../Anexos/" + fileName.Replace(".pdf", "") + "_carimbado.pdf" + "','_blank');</script>"
+
                          );
                         }
                     }

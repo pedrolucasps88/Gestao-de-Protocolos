@@ -45,7 +45,7 @@ namespace Gestão_de_Protocolos.Login
                         lbl_aviso.Text = "Login realizado com sucesso!";
                         Session["usuariologado"] = txtid_funcionario.Text;
                         //Response.Redirect("../TelaPrincipal/TelaPrincipal.aspx");
-                        Response.Redirect("../Caixa de Entrada/CaixaDeEntrada.aspx");
+                        Response.Redirect("../THome/Home.aspx");
                     }
                     else
                     {

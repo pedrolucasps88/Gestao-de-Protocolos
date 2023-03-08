@@ -251,6 +251,7 @@
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
+    <Content Include="THome\Home.aspx" />
     <Content Include="Updates.txt" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -342,6 +343,13 @@
     </Compile>
     <Compile Include="Teste.aspx.designer.cs">
       <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="THome\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="THome\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

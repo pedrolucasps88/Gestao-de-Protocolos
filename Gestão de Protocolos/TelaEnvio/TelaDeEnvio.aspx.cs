@@ -29,7 +29,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             string selectedValue = setores.SelectedValue;
 
             //Conecta com o banco de dados e realiza a consulta.
-            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=teste");
+            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=testin");
             MySqlCommand command = new MySqlCommand("SELECT `funcionarios` FROM `testin` WHERE `setores`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
@@ -91,7 +91,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             string selectedValue = setores.SelectedValue;
 
             //Conecta com o banco de dados e realiza a consulta.
-            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=teste");
+            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=testin");
             MySqlCommand command = new MySqlCommand("SELECT `funcionarios` FROM `testin` WHERE `setores`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 

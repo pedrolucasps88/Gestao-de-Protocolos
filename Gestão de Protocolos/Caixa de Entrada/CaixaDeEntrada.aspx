@@ -8,6 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
     <div class="container mt-3">
         <div class="row">
             <div class="col-sm-3">
@@ -21,7 +22,7 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound">
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
     <Columns>
         <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
        

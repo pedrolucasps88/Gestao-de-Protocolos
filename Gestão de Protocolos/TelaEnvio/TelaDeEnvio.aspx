@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../THome/Home.aspx">
                             <i class="fa fa-home"></i>
                             Home
           <span class="sr-only">(current)</span>
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../TelaPrincipal/TelaPrincipal.aspx">Envios de Mensagens
+                        <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">Envios de Mensagens
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -114,7 +114,7 @@
 
             <div class="form-group">
                 <label for="attachment">Anexar arquivo:</label>
-                <asp:FileUpload runat="server" ID="arqui"/>              
+                <asp:FileUpload runat="server" ID="arqui" />              
             </div>
 
             <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary" style="background-color:black;width:100px;height:50px;font-size:16px;border-radius: 30px;margin-left:35%;"></asp:Button>
