@@ -16,7 +16,7 @@
         <!------ Include the above in your HEAD tag ---------->
 
         <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark" style="margin-top: 0%">
-            <a class="navbar-brand" href="#" style="margin-top: 3%">GESTÃO DE PROTOCOLOS</a>
+           <a class="navbar-brand" href="../THome/Home.aspx" style="margin-top: 0%">GESTÃO DE PROTOCOLOS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

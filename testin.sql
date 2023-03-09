@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Mar-2023 às 05:48
--- Versão do servidor: 10.4.27-MariaDB
--- versão do PHP: 8.1.12
+-- Tempo de geração: 09-Mar-2023 às 01:57
+-- Versão do servidor: 10.4.21-MariaDB
+-- versão do PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `teste`
+-- Banco de dados: `testin`
 --
+CREATE DATABASE IF NOT EXISTS `testin` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `testin`;
 
 -- --------------------------------------------------------
 
@@ -31,7 +33,7 @@ CREATE TABLE `testin` (
   `id` int(11) NOT NULL,
   `setores` varchar(200) NOT NULL,
   `funcionarios` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `testin`

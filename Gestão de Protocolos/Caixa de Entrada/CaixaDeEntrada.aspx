@@ -13,16 +13,17 @@
         <div class="row">
             <div class="col-sm-3">
                 <!-- Menu de navegação -->
+                
                 <ul class="list-group">
                     <li class="list-group-item active">Caixa de Entrada</li>
-                    <li class="list-group-item">Enviadas</li>
+                    <li class="list-group-item ">Enviadas</li>
                     <li class="list-group-item">Rascunhos</li>
                     <li class="list-group-item">Lixeira</li>
                 </ul>
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="300px"  OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
     <Columns>
         <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
        
@@ -36,7 +37,7 @@
                 </asp:TemplateField>--%>
         
         <asp:BoundField DataField="hora" HeaderText="hora" />
-        <asp:ButtonField ButtonType="Link" CommandName="AssinaturaDigital"  ControlStyle-CssClass="btn btn-success"  Text="ASSINATURA DIGITAL" />  
+        <asp:ButtonField ButtonType="Link" CommandName="AssinaturaDigital"  HeaderText="ASSINE AGORA" ControlStyle-CssClass="btn btn-success"  Text="ASSINATURA DIGITAL" />  
     </Columns>
 </asp:GridView>
 
