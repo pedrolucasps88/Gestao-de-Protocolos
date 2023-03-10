@@ -121,6 +121,75 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                     }
                 }
             }
+
+        protected void RECEBIDOS_Click(object sender, EventArgs e)
+        {
+            
+            
+            connection = new MySqlConnection(SiteMaster.ConnectionString);
+            connection.Open();
+            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM envio WHERE `matricula_destinatario`= " + 4 /*Session["usuariologado"].ToString()*/, connection);
+
+
+            List<Mensagem> mensagemrece = new List<Mensagem>();
+
+
+            using (var reader = comando.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    Mensagem recebidos = new Mensagem();
+                    recebidos.remetente = reader.GetInt32("matricula_remetente");
+                    recebidos.assunto = reader.GetString("assunto");
+                    recebidos.mensagem = reader.GetString("mensagem");
+                    recebidos.anexo = reader.GetString("anexo");
+                    recebidos.hora = reader.GetDateTime("hora");
+                    mensagemrece.Add(recebidos);
+                }
+            }
+
+            Session["mensagens"] = mensagemrece;
+            GridView1.DataSource = mensagemrece;
+            GridView1.DataBind();
+            connection.Close();
         }
+
+        protected void ENVIADOS_Click(object sender, EventArgs e)
+        {
+            //connection = new MySqlConnection(SiteMaster.ConnectionString);
+            //connection.Open();
+            //GridView1.AutoGenerateColumns = true;
+        
+            //var comando = new MySqlCommand($@"SELECT matricula_destinatario,assunto,mensagem,anexo,hora FROM envio WHERE `matricula_remetente`= " + 4 /*Session["usuariologado"].ToString()*/, connection);
+
+
+            //List<Mensagem> mensagemrece = new List<Mensagem>();
+          
+
+            //using (var reader = comando.ExecuteReader())
+            //{
+            //    while (reader.Read())
+            //    {
+            //        Mensagem recebidos = new Mensagem();
+            //        recebidos.destinatario = reader.GetInt32("matricula_destinatario");
+            //        recebidos.assunto = reader.GetString("assunto");
+            //        recebidos.mensagem = reader.GetString("mensagem");
+            //        recebidos.anexo = reader.GetString("anexo");
+            //        recebidos.hora = reader.GetDateTime("hora");
+            //        mensagemrece.Add(recebidos);
+            //    }
+            //}
+
+            //Session["mensagens"] = mensagemrece;
+            //GridView1.DataSource = mensagemrece;
+            //GridView1.DataBind();
+            //connection.Close();
+        }
+
+
+    }
+
+  
 }
+
 

@@ -14,19 +14,17 @@
             <div class="col-sm-3">
                 <!-- Menu de navegação -->
                 
-                <ul class="list-group">
-                    <li class="list-group-item active">Caixa de Entrada</li>
-                    <li class="list-group-item ">Enviadas</li>
-                    <li class="list-group-item">Rascunhos</li>
-                    <li class="list-group-item">Lixeira</li>
-                </ul>
+                <div class="btn-group-vertical" style="margin-top:20%">
+                <asp:Button Text="RECEBIDOS" ID="RECEBIDOS" runat="server" class="btn btn-outline-success" OnClick="RECEBIDOS_Click"  style="width:100px;height:50px;"/>
+                <asp:Button Text="ENVIADOS" ID="ENVIADOS" runat="server" class="btn btn-outline-info" OnClick="ENVIADOS_Click" style="width:100px;height:50px" />
+                <asp:Button Text="RASCUNHOS" ID="RASCUNHOS" runat="server" class="btn btn-outline-warning" style="width:100px;height:50px" />
+</div>
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="300px"  OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="300px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
     <Columns>
-        <asp:BoundField  DataField="Remetente" HeaderText="Remetente" />
-       
+        <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
         <asp:BoundField DataField="assunto" HeaderText="assunto" />
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
         <asp:BoundField DataField="anexo" HeaderText="Anexo" />
@@ -40,6 +38,7 @@
         <asp:ButtonField ButtonType="Link" CommandName="AssinaturaDigital"  HeaderText="ASSINE AGORA" ControlStyle-CssClass="btn btn-success"  Text="ASSINATURA DIGITAL" />  
     </Columns>
 </asp:GridView>
+     
 
 
             </div>
