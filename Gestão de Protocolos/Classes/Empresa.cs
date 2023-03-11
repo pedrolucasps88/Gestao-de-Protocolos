@@ -7,10 +7,10 @@ namespace Gestão_de_Protocolos.Classes
 {
     public class Empresa
     {
-        private int cnpj { get; set; }
-        private string nome { get; set; }
-        private string email { get; set; }
-        private int id_admin { get; set; }
+        public int id { get; set; }
+        public string setor { get; set; }
+        public int matricula_func { get; set; }
+        public int senha { get; set; }
 
 
         public void Insert()
