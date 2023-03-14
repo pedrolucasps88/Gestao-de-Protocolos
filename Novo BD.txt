@@ -1,0 +1,23 @@
+CREATE TABLE `funcionarios` (
+  `matricula_Func` int(11) NOT NULL,
+  `nome_Func` varchar(200) DEFAULT NULL,
+  `cargo` varchar(200) DEFAULT NULL,
+  `id_Setor` int(11) DEFAULT NULL
+) ;
+
+CREATE TABLE Funcionarios(Matricula_Func int PRIMARY KEY AUTO_INCREMENT,cargo varchar(200),nome_Func varchar(200),id_Setor int, FOREIGN KEY (id_Setor) REFERENCES setor(ID));
+CREATE TABLE Chat(id int PRIMARY KEY AUTO_INCREMENT,matricula_remetente int,matricula_destinatario int,assunto varchar(200),mensagem varchar(400),anexo varchar(200),hora datetime,FOREIGN KEY (matricula_remetente) REFERENCES Funcionarios(Matricula_Func),FOREIGN KEY(matricula_destinatario) REFERENCES Funcionarios(Matricula_Func));
+
+
+
+
+INSERT INTO `setor`(`nome_Setor`) VALUES ('RH');
+INSERT INTO `setor`(`nome_Setor`) VALUES ('Manutenção');
+INSERT INTO `setor`(`nome_Setor`) VALUES ('Secretaria');
+INSERT INTO `setor`(`nome_Setor`) VALUES ('Qualidade');
+
+
+
+INSERT INTO `funcionarios`(`cargo`, `nome_Func`, `id_Setor`) VALUES ('Gay','Jão',1);
+INSERT INTO `funcionarios`(`cargo`, `nome_Func`, `id_Setor`) VALUES ('Maromba','Kevin',2);
+INSERT INTO `funcionarios`(`cargo`, `nome_Func`, `id_Setor`) VALUES ('gestão','Dani',3);
