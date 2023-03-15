@@ -23,14 +23,14 @@ namespace Gestão_de_Protocolos.TelaEnvio
             }
             else
             {
-                Session["usuariologado"].ToString();
+                
             }
 
             string selectedValue = setores.SelectedValue;
 
             //Conecta com o banco de dados e realiza a consulta.
-            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=testin");
-            MySqlCommand command = new MySqlCommand("SELECT `funcionarios` FROM `testin` WHERE `setores`= @selectedValue", conexão);
+            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `setor` WHERE `id`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
             conexão.Open();
@@ -40,13 +40,13 @@ namespace Gestão_de_Protocolos.TelaEnvio
             funcionarios.Items.Clear();
 
             //Preenche o dropdown list com os resultados da consulta.
-            while (reader.Read())
-            {
-                ListItem item = new ListItem();
-                item.Text = reader["funcionarios"].ToString();
-                item.Value = reader["funcionarios"].ToString();
-                funcionarios.Items.Add(item);
-            }
+            //while (reader.Read())
+            //{
+            //    ListItem item = new ListItem();
+            //    item.Text = reader["funcionarios"].ToString();
+            //    item.Value = reader["funcionarios"].ToString();
+            //    funcionarios.Items.Add(item);
+            //}
 
             conexão.Close();
         }
@@ -67,12 +67,12 @@ namespace Gestão_de_Protocolos.TelaEnvio
 
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
-            int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString());
-            int matriculadestinatario = Convert.ToInt32(funcionarios.SelectedValue);
+            int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString()); ;
+            int matriculadestinatario = 4/*Convert.ToInt32(funcionarios.SelectedValue)*/;
 
 
             connection.Open();
-            var comando = new MySqlCommand($@"INSERT INTO envio (matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@assunto,@mensagem,@anexo,@hora)", connection);
+            var comando = new MySqlCommand($@"INSERT INTO chat (matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora) VALUES (@matricula_remetente,@matricula_destinatario,@assunto,@mensagem,@anexo,@hora)", connection);
             comando.Parameters.Add(new MySqlParameter("matricula_remetente", matricularemetente));
             comando.Parameters.Add(new MySqlParameter("matricula_destinatario", matriculadestinatario));
             comando.Parameters.Add(new MySqlParameter("assunto", assunto));
@@ -82,7 +82,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             comando.ExecuteNonQuery();
             connection.Close();
 
-
+           
 
         }
 
@@ -91,8 +91,8 @@ namespace Gestão_de_Protocolos.TelaEnvio
             string selectedValue = setores.SelectedValue;
 
             //Conecta com o banco de dados e realiza a consulta.
-            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=testin");
-            MySqlCommand command = new MySqlCommand("SELECT `funcionarios` FROM `testin` WHERE `setores`= @selectedValue", conexão);
+            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `setor` WHERE `id`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
             conexão.Open();
@@ -102,13 +102,13 @@ namespace Gestão_de_Protocolos.TelaEnvio
             funcionarios.Items.Clear();
 
             //Preenche o dropdown list com os resultados da consulta.
-            while (reader.Read())
-            {
-                ListItem item = new ListItem();
-                item.Text = reader["funcionarios"].ToString();
-                item.Value = reader["funcionarios"].ToString();
-                funcionarios.Items.Add(item);
-            }
+            //while (reader.Read())
+            //{
+            //    ListItem item = new ListItem();
+            //    item.Text = reader["funcionarios"].ToString();
+            //    item.Value = reader["funcionarios"].ToString();
+            //    funcionarios.Items.Add(item);
+            //}
 
             conexão.Close();
         }

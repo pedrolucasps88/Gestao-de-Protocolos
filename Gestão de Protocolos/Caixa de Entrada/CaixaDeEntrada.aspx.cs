@@ -31,7 +31,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
 
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             connection.Open();
-            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM envio WHERE `matricula_destinatario`= " +4 /*Session["usuariologado"].ToString()*/, connection);
+            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM chat WHERE `matricula_destinatario`= " +Session["usuariologado"].ToString(), connection);
 
 
             List<Mensagem> mensagemrece = new List<Mensagem>();

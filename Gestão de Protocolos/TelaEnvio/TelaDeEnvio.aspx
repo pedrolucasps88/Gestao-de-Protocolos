@@ -89,8 +89,10 @@
             <div class="form-group">
                 <label for="to">Para:</label>
                 <asp:DropDownList runat="server" ID="setores" AutoPostBack="true" OnSelectedIndexChanged="setores_SelectedIndexChanged" >
-                    <asp:ListItem Text="setor1" />
-                    <asp:ListItem Text="setor2" />
+                    <asp:ListItem Text="RH" Value="1" />
+                    <asp:ListItem Text="Manutenção" Value="2" />
+                    <asp:ListItem Text="Secretaria" Value="3" />
+                    <asp:ListItem Text="Qualidade" Value="4" />
                 </asp:DropDownList>
             </div>
              <div class="form-group">
