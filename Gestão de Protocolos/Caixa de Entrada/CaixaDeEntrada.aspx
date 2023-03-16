@@ -22,9 +22,12 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="300px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
     <Columns>
         <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
+        <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" />
+        <asp:BoundField DataField="cargo" HeaderText="cargo" />
+        <asp:BoundField DataField="setorreme" HeaderText="setor do remetente" />
         <asp:BoundField DataField="assunto" HeaderText="assunto" />
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
         <asp:BoundField DataField="anexo" HeaderText="Anexo" />

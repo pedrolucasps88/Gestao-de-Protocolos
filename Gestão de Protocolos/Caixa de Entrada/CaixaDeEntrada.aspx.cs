@@ -19,19 +19,23 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //if (Session["usuariologado"] == null)
-            //{
-            //    Response.Redirect("../Login.aspx");
+            if (Session["usuariologado"] == null)
+            {
+                Response.Redirect("../Login.aspx");
 
-            //}
-            //else
-            //{
-            //    Session["usuariologado"].ToString();
-            //}
+            }
+            else
+            {
+                Session["usuariologado"].ToString();
+            }
 
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             connection.Open();
-            var comando = new MySqlCommand($@"SELECT matricula_remetente,matricula_destinatario,assunto,mensagem,anexo,hora FROM chat WHERE `matricula_destinatario`= " +Session["usuariologado"].ToString(), connection);
+            var comando = new MySqlCommand($@"SELECT c.matricula_remetente,f.nome_Func,f.cargo,s.nome_setor,c.matricula_destinatario,c.assunto,c.mensagem,c.anexo,c.hora 
+                                           FROM chat c
+                                           INNER JOIN funcionarios f ON c.matricula_remetente= f.Matricula_Func
+                                           INNER JOIN setor s on f.id_Setor=s.id
+                                           WHERE `matricula_destinatario`=" +Session["usuariologado"].ToString(), connection);
 
 
             List<Mensagem> mensagemrece = new List<Mensagem>();
@@ -43,6 +47,9 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                 {
                     Mensagem recebidos = new Mensagem();
                     recebidos.remetente = reader.GetInt32("matricula_remetente");
+                    recebidos.nomeremetente = reader.GetString("nome_Func");
+                    recebidos.cargo = reader.GetString("cargo");
+                    recebidos.setorreme = reader.GetString("nome_setor");
                     recebidos.assunto = reader.GetString("assunto");
                     recebidos.mensagem = reader.GetString("mensagem");
                     recebidos.anexo = reader.GetString("anexo");

@@ -16,9 +16,9 @@ namespace Gestão_de_Protocolos.TelaAdmin
         protected void Page_Load(object sender, EventArgs e)
         {
         
-            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=112233");
+            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
             connection.Open();
-            var comando = new MySqlCommand($@"SELECT * FROM `empresa` WHERE 1;", connection);
+            var comando = new MySqlCommand($@"SELECT * FROM `funcionario` WHERE 1;", connection);
             List<Empresa> funci = new List<Empresa>();
 
             using (var reader = comando.ExecuteReader())
@@ -39,7 +39,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             GridView1.DataSource = funci;
             GridView1.DataBind();
             connection.Close();
-            connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=chat");
+            connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
             
             var comando2 = new MySqlCommand($@"SELECT * FROM `envio` WHERE 1", connection2);
             List<Mensagem> mensag = new List<Mensagem>();
