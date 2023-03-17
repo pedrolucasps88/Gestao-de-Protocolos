@@ -4,11 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Security.Cryptography.X509Certificates;
 using System.IO;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using Image = iTextSharp.text.Image;
+using Ghostscript.NET;
+using Ghostscript.NET.Rasterizer;
 
 namespace Gestão_de_Protocolos
 {
@@ -16,61 +14,58 @@ namespace Gestão_de_Protocolos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void Unnamed_Click(object sender, EventArgs e)
-        {
-            if (fileUpload.HasFile)
+            if (!IsPostBack)
             {
-                string fileName = Path.GetFileName(fileUpload.PostedFile.FileName);
-                string fileExtension = Path.GetExtension(fileName);
-
-                if (fileExtension.ToLower() == ".pdf")
+                string[] arquivos = Directory.GetFiles(Server.MapPath("~/Arquivos"));
+                List<string> miniaturas = new List<string>();
+                foreach (string arquivo in arquivos)
                 {
-                    string filePath = Server.MapPath("~/Anexos/" + fileName);
-                    fileUpload.SaveAs(filePath);
-
-                    using (Stream inputPdfStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-                    using (Stream outputPdfStream = new FileStream(filePath.Replace(".pdf", "") + "_carimbado.pdf", FileMode.Create, FileAccess.Write, FileShare.None))
+                    if (Path.GetExtension(arquivo).ToLower() == ".pdf")
                     {
-                        PdfReader reader = new PdfReader(inputPdfStream);
-                        PdfStamper stamper = new PdfStamper(reader, outputPdfStream);
-
-                        Image image = Image.GetInstance(Server.MapPath("~/Anexos/carimbo.png"));
-                        image.ScaleAbsolute(400, 400); // ajuste o tamanho da imagem conforme necessário
-
-                        int numPages = reader.NumberOfPages;
-                        for (int i = 1; i <= numPages; i++)
+                        string miniatura = GerarMiniatura(arquivo);
+                        if (!string.IsNullOrEmpty(miniatura))
                         {
-                            Rectangle pageSize = reader.GetPageSize(i);
-                            PdfContentByte content = stamper.GetOverContent(i);
-                            image.SetAbsolutePosition(pageSize.Width - 280, 40); // ajuste a posição do carimbo conforme necessário
-                            content.AddImage(image);
+                            miniaturas.Add(miniatura);
                         }
-
-                        stamper.Close();
-                        reader.Close();
-
-                        // Exibe um link para download do arquivo carimbado
-                        lnkDownload.Text = "Clique aqui para baixar o arquivo carimbado";
-                       
-                        lnkDownload.Visible = true;
-                        
-
-                        this.ClientScript.RegisterStartupScript(
-                        this.GetType(),
-                        "Window" + Guid.NewGuid(),
-                        "<script language='javascript'>window.open('" + "Anexos/" + fileName.Replace(".pdf", "") + "_carimbado.pdf" + "','_blank');</script>"
-                     );
                     }
                 }
-                else
-                {
-                    //lblMessage.Text = "Por favor, selecione um arquivo PDF para carimbar.";
-                }
+                rptMiniaturas.DataSource = miniaturas;
+                rptMiniaturas.DataBind();
             }
         }
 
+        private string GerarMiniatura(string arquivo)
+        {
+            string miniatura = string.Empty;
+            try
+            {
+                GhostscriptVersionInfo gvi = new GhostscriptVersionInfo(@"C:\Program Files\gs\gs9.53.3\bin\gswin64c.exe");
+                using (var rasterizer = new GhostscriptRasterizer())
+                {
+                    //rasterizer.Open(arquivo, gvi, false);
+                    //Image img = rasterizer.GetPage(100, 100, 1);
+                    //using (MemoryStream ms = new MemoryStream())
+                    //{
+                    //    img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    //    miniatura = "data:image/png;base64," + Convert.ToBase64String(ms.ToArray());
+                    //}
+                }
+            }
+            catch (Exception ex)
+            {
+                miniatura = string.Empty;
+            }
+            return miniatura;
+        }
+
+        protected void rptMiniaturas_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                string miniatura = e.Item.DataItem.ToString();
+                Image imgMiniatura = e.Item.FindControl("imgMiniatura") as Image;
+                imgMiniatura.Attributes["onclick"] = "MostrarPDF('" + miniatura + "')";
+            }
+        }
     }
 }

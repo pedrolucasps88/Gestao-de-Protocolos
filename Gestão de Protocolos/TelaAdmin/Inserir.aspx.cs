@@ -35,5 +35,10 @@ namespace Gestão_de_Protocolos.TelaAdmin
 
             connection.Close();
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TelaDeAdmin.aspx");
+        }
     }
 }

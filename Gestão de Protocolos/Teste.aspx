@@ -10,6 +10,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<%--<script type="text/javascript">
+            function MostrarPDF(miniatura) {
+                var visualizacao = document.getElementById('<%=pnlVisualizacao.ClientID %>');
+        visualizacao.innerHTML = "<embed src='" + miniatura.replace("data:image/png;base64,", "") + "' width='100%' height='100%'></embed>";
+        var tabContainer = $find('<%=TabContainer1.ClientID %>');
+                tabContainer.set_activeTabIndex(1);
+            }
+        </script>--%>
 </head>
 <body>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -34,17 +42,18 @@
 			</ul>
 		</div>
 	</nav>
-	
-	<div class="container" runat="server" >
-        <form runat="server">
-		 <asp:FileUpload ID="fileUpload" runat="server" />
-		 <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary"></asp:Button>
-            <asp:Label Text="text" runat="server" ID="lblAssinatura"/>
-
-            <asp:LinkButton runat="server" ID="lnkDownload" Visible="false" ></asp:LinkButton>
-            
-	</form>
-            </div>
-		 
+	<ajaxToolkit:TabContainer ID="TabContainer1" ClientID="TabContainer1" runat="server" ActiveTabIndex="0">
+    <ajaxToolkit:TabPanel runat="server" HeaderText="Miniaturas" ID="TabPanel1">
+        <asp:Repeater ID="rptMiniaturas" runat="server">
+            <ItemTemplate>
+                <asp:Image ID="imgMiniatura" runat="server" ImageUrl='<%# Container.DataItem %>' />
+            </ItemTemplate>
+        </asp:Repeater>
+    </ajaxToolkit:TabPanel>
+    <ajaxToolkit:TabPanel runat="server" HeaderText="Visualização" ID="TabPanel2">
+        <asp:Panel ID="pnlVisualizacao" runat="server" />
+    </ajaxToolkit:TabPanel>
+</ajaxToolkit:TabContainer>
 </body>
+
 </html>

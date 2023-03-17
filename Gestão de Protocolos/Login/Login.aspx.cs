@@ -22,7 +22,7 @@ namespace Gestão_de_Protocolos.Login
         protected void btngo_Click(object sender, EventArgs e)
         {
 
-            string bd = txtbanco.Text;
+            
             string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos";
             string id_funcionario = txtid_funcionario.Text;
              string senha_funcionario = txtpassword.Text;
@@ -31,6 +31,10 @@ namespace Gestão_de_Protocolos.Login
             {
                 using (var connection = new MySqlConnection(connectionString))
                 {
+                    if (id_funcionario == "admin" && senha_funcionario == "admin")
+                    {
+                        Response.Redirect("../TelaAdmin/TelaDeAdmin.aspx");
+                    }
                     connection.Open();
                    // Log.Information("Iniciando pesquisa no Banco de Dados!");
                     string sql = "SELECT * FROM `funcionarios` WHERE Matricula_Func = @matricula_func AND senha = @senha";
@@ -38,7 +42,7 @@ namespace Gestão_de_Protocolos.Login
                     command.Parameters.AddWithValue("@matricula_func", Convert.ToInt32(id_funcionario));
                     command.Parameters.AddWithValue("@senha",senha_funcionario);
                    // Log.Information("verificação dos parametros!");
-
+                   
                     int result = Convert.ToInt32(command.ExecuteScalar());
                     if (result > 0)
                     {

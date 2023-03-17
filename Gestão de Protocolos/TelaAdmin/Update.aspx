@@ -5,11 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+             <asp:Button Text="<< Voltar" runat="server" OnClick="Unnamed_Click" class="btn btn-warning" />
+            <h1 style="margin-left:35%">Atualizar Dados de Funcionario</h1>
                  <div class="mb-3 mt-3">
     <label for="email" class="form-label">Nome:</label>
     <asp:TextBox runat="server" class="form-control" id="nome" placeholder="Nome do Funcionario" name="email" ></asp:TextBox>

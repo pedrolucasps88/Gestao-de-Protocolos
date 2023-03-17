@@ -12,6 +12,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Button Text="<< Voltar" runat="server" class="btn btn-warning" OnClick="Unnamed_Click" href="" />
+            <h1 style="margin-left:35%">Cadastrar Funcionario</h1>
              <div class="mb-3 mt-3">
     <label for="email" class="form-label">Nome:</label>
     <asp:TextBox runat="server" class="form-control" id="nome" placeholder="Nome do Funcionario" name="email" ></asp:TextBox>

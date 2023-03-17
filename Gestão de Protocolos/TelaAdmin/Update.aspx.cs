@@ -20,6 +20,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
                 connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
                 connection.Open();
                 var comando = new MySqlCommand($@"SELECT `cargo`, `nome_Func`, `senha`, `id_Setor` FROM `funcionarios` WHERE `Matricula_Func`= "+ Convert.ToInt32(matricula), connection);
+                int num_setor;
                 using (var reader = comando.ExecuteReader())
                 {
                     while (reader.Read())
@@ -28,10 +29,11 @@ namespace Gestão_de_Protocolos.TelaAdmin
                         Cargo.Text = reader.GetString("cargo");
                         nome.Text = reader.GetString("nome_Func");
                         psw.Text = reader.GetString("senha");
-
-                      
+                        num_setor = reader.GetInt32("id_Setor");
+                        setores.SelectedValue = Convert.ToString(num_setor);
                     }
                 }
+               
                       
             }
         }
@@ -56,6 +58,11 @@ namespace Gestão_de_Protocolos.TelaAdmin
         protected void setores_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TelaDeAdmin.aspx");
         }
     }
 }

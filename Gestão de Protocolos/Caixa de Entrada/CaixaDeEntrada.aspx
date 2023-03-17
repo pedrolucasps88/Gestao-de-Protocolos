@@ -22,21 +22,24 @@
             </div>
             <div class="col-sm-9">
                 <!-- Lista de mensagens -->
- <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
+ <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" RowStyle-BackColor="#FFFFFF" AlternatingRowStyle-BackColor="#F2F2F2"  >
     <Columns>
-        <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
-        <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" />
+        <asp:BoundField DataField="Remetente" HeaderText="Remetente" ItemStyle-HorizontalAlign="Center"  />
+        <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" ItemStyle-HorizontalAlign="Center"/>
         <asp:BoundField DataField="cargo" HeaderText="cargo" />
-        <asp:BoundField DataField="setorreme" HeaderText="setor do remetente" />
-        <asp:BoundField DataField="assunto" HeaderText="assunto" />
-        <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
-        <asp:BoundField DataField="anexo" HeaderText="Anexo" />
+        <asp:BoundField DataField="setorreme" HeaderText="setor do remetente"  ItemStyle-HorizontalAlign="Center"/>
+        <asp:BoundField DataField="assunto" HeaderText="assunto" ItemStyle-HorizontalAlign="Center" />
+        <asp:BoundField DataField="mensagem" HeaderText="mensagem" ItemStyle-HorizontalAlign="Center" />
+        <asp:BoundField DataField="anexo" HeaderText="Anexo" ItemStyle-HorizontalAlign="Center" />
    <%--     <asp:TemplateField HeaderText="Anexo">
                     <ItemTemplate>
                         <asp:LinkButton ID="lnkDownload" Text = "Download" OnClick="lnkDownload_Click" runat="server" ></asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>--%>
         
+    
+    
+   
         <asp:BoundField DataField="hora" HeaderText="hora" />
         <asp:ButtonField ButtonType="Link" CommandName="AssinaturaDigital"  HeaderText="ASSINE AGORA" ControlStyle-CssClass="btn btn-success"  Text="ASSINATURA DIGITAL" />  
     </Columns>

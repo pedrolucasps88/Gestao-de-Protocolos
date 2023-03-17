@@ -42,7 +42,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             connection.Close();
             connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
             
-            var comando2 = new MySqlCommand($@"SELECT c.matricula_remetente,f.nome_Func nome_r,f.cargo cargo_r,s.nome_setor setor_r,c.matricula_destinatario,d.nome_Func nome_d,d.cargo cargo_d,z.nome_setor setor_d,c.assunto,c.mensagem,c.anexo,c.hora 
+            var comando2 = new MySqlCommand($@"SELECT c.id,c.matricula_remetente,f.nome_Func nome_r,f.cargo cargo_r,s.nome_setor setor_r,c.matricula_destinatario,d.nome_Func nome_d,d.cargo cargo_d,z.nome_setor setor_d,c.assunto,c.mensagem,c.anexo,c.hora 
 FROM chat c
 INNER JOIN funcionarios f ON c.matricula_remetente= f.Matricula_Func
 INNER JOIN funcionarios d ON c.matricula_destinatario= d.Matricula_Func
@@ -56,6 +56,7 @@ WHERE 1", connection2);
                 while (reader2.Read())
                 {
                     chatCompleto recebidosm = new chatCompleto();
+                    recebidosm.id = reader2.GetInt32("id");
                     recebidosm.remetente = reader2.GetInt32("matricula_remetente");
                     recebidosm.nomeremetente = reader2.GetString("nome_r");
                     recebidosm.cargoreme = reader2.GetString("cargo_r");
@@ -105,7 +106,18 @@ WHERE 1", connection2);
 
         protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            int index = Convert.ToInt32(e.CommandArgument);
+            var mensag = (List<chatCompleto>)Session["mensagens"];
+            if (e.CommandName == "Excluir")
+            {
+                connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+                connection.Open();
+                var comando = new MySqlCommand($@"DELETE FROM `chat` WHERE `id`=" + mensag[index].id, connection);
+                comando.ExecuteNonQuery();
+                SiteMaster.ExibirAlert(this, "Mensagem excluída com sucesso!", "TelaDeAdmin.aspx");
 
+                connection.Close();
+            }
 
         }
 
@@ -116,7 +128,7 @@ WHERE 1", connection2);
                 var index = e.Row.RowIndex;
                 var mensagem = ((List<chatCompleto>)Session["mensagens"])[index];
 
-                e.Row.Cells[11].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
+                e.Row.Cells[9].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
             }
 
         }
@@ -124,6 +136,11 @@ WHERE 1", connection2);
         protected void Insert_Click(object sender, EventArgs e)
         {
             Response.Redirect("Inserir.aspx");
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Login/Login.aspx");
         }
     }
 }

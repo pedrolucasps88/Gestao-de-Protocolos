@@ -13,6 +13,7 @@
 
     <form id="form1" runat="server">
         <div>
+             <asp:Button Text="<< Voltar" runat="server" class="btn btn-outline-dark" OnClick="Unnamed_Click"/>
             <h1 style="margin-left:25%;margin-top:5%">PAGINA DE ADIMINISTRADOR</h1>
             <h4 style="margin-left:32%;margin-top:5%">SETORES/FUNCIONARIOS</h4>
             <asp:Button ID="Insert" Text="Cadastrar Funcionario" class="btn btn-success" runat="server" style="margin-top:3%;margin-left:55%;" OnClick="Insert_Click" />
@@ -33,7 +34,7 @@
                 <div style="width:800px;height:400px;margin-top:1%;margin-left:20%">
 <asp:GridView ID="GridView2" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="100%" OnRowCommand="GridView2_RowCommand" OnRowDataBound="GridView2_RowDataBound"  >
     <Columns>
-        
+        <asp:BoundField DataField="id" HeaderText="id" />
          <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
         <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" />
         <asp:BoundField DataField="cargoreme" HeaderText="cargo do Remetente" />

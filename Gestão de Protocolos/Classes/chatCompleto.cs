@@ -7,6 +7,7 @@ namespace Gestão_de_Protocolos.Classes
 {
     public class chatCompleto
     {
+        public int id { get; set; }
         public int remetente { get; set; }
         public string nomeremetente { get; set; }
         public string cargoreme { get; set; }
