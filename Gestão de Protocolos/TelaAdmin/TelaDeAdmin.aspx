@@ -14,13 +14,15 @@
     <form id="form1" runat="server">
         <div>
             <h1 style="margin-left:25%;margin-top:5%">PAGINA DE ADIMINISTRADOR</h1>
-            <h4 style="margin-left:30%;margin-top:5%">SETORES/FUNCIONARIOS</h4>
-            <div style="width:800px;height:400px;margin-top:2%;margin-left:20%">
+            <h4 style="margin-left:32%;margin-top:5%">SETORES/FUNCIONARIOS</h4>
+            <asp:Button ID="Insert" Text="Cadastrar Funcionario" class="btn btn-success" runat="server" style="margin-top:3%;margin-left:55%;" OnClick="Insert_Click" />
+            <div style="width:800px;height:400px;margin-top:1%;margin-left:20%">
             <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="100%" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"  >
     <Columns>
-        <asp:BoundField DataField="id" HeaderText="ID" />
+        <asp:BoundField DataField="matricula" HeaderText="Matricula" />
+        <asp:BoundField DataField="nome" HeaderText="Nome do Funcionario" />
         <asp:BoundField DataField="setor" HeaderText="setor" />
-        <asp:BoundField DataField="matricula_func" HeaderText="Matricula Funcionario" />
+        <asp:BoundField DataField="cargo" HeaderText="Cargo" />
         <asp:BoundField DataField="senha" HeaderText="Senha" />
         <asp:ButtonField ButtonType="Link" CommandName="Editar"  HeaderText="" ControlStyle-CssClass="btn btn-info"  Text="EDITAR" />  
         <asp:ButtonField ButtonType="Link" CommandName="Excluir"  HeaderText="" ControlStyle-CssClass="btn btn-warning"  Text="EXCLUIR" /> 
@@ -32,8 +34,13 @@
 <asp:GridView ID="GridView2" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="100%" OnRowCommand="GridView2_RowCommand" OnRowDataBound="GridView2_RowDataBound"  >
     <Columns>
         
-        <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
-        <asp:BoundField DataField="Destinatario" HeaderText="Destinatario" />
+         <asp:BoundField DataField="Remetente" HeaderText="Remetente" />
+        <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" />
+        <asp:BoundField DataField="cargoreme" HeaderText="cargo do Remetente" />
+        <asp:BoundField DataField="setorreme" HeaderText="setor do remetente" />
+        <asp:BoundField DataField="nomedestinatario" HeaderText="Nome do Destinatario" />
+        <asp:BoundField DataField="cargodesti" HeaderText="cargo do Destinatario" />
+        <asp:BoundField DataField="setordesti" HeaderText="setor do Destinatario" />
         <asp:BoundField DataField="assunto" HeaderText="assunto" />
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" />
         <asp:BoundField DataField="anexo" HeaderText="Anexo" />

@@ -248,7 +248,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TelaAdmin\Inserir.aspx" />
     <Content Include="TelaAdmin\TelaDeAdmin.aspx" />
+    <Content Include="TelaAdmin\Update.aspx" />
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
@@ -283,7 +285,8 @@
     <Compile Include="Caixa de Entrada\CaixaDeEntrada.aspx.designer.cs">
       <DependentUpon>CaixaDeEntrada.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Empresa.cs" />
+    <Compile Include="Classes\chatCompleto.cs" />
+    <Compile Include="Classes\Funcionarios.cs" />
     <Compile Include="Classes\Mensagem.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -324,12 +327,26 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="TelaAdmin\Inserir.aspx.cs">
+      <DependentUpon>Inserir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaAdmin\Inserir.aspx.designer.cs">
+      <DependentUpon>Inserir.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TelaAdmin\TelaDeAdmin.aspx.cs">
       <DependentUpon>TelaDeAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TelaAdmin\TelaDeAdmin.aspx.designer.cs">
       <DependentUpon>TelaDeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAdmin\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaAdmin\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
     </Compile>
     <Compile Include="TelaEnvio\TelaDeEnvio.aspx.cs">
       <DependentUpon>TelaDeEnvio.aspx</DependentUpon>
