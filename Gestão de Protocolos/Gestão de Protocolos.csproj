@@ -200,6 +200,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Anexos\carimbo.png" />
+    <Content Include="Anexos\transferir.png" />
     <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
     <Content Include="Contact.aspx" />
@@ -209,6 +210,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -220,6 +222,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Anexos\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\DOCUMENTO_TESTE.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -257,6 +261,8 @@
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
+    <Content Include="test\403881.png" />
+    <Content Include="test\transferir.png" />
     <Content Include="THome\Home.aspx" />
     <Content Include="Updates.txt" />
     <Content Include="ViewSwitcher.ascx" />
@@ -304,6 +310,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentosPadroes\DocumentosPadroes.aspx.cs">
+      <DependentUpon>DocumentosPadroes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentosPadroes\DocumentosPadroes.aspx.designer.cs">
+      <DependentUpon>DocumentosPadroes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -389,11 +402,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DocumentosPadroes\Thumbs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="test\DOCUMENTO_TESTE.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

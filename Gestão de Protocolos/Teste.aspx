@@ -10,6 +10,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<%--<script type="text/javascript">
             function MostrarPDF(miniatura) {
                 var visualizacao = document.getElementById('<%=pnlVisualizacao.ClientID %>');
@@ -20,6 +22,7 @@
         </script>--%>
 </head>
 <body>
+    <form runat="server">
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 		<a class="navbar-brand" href="#">Minha Empresa</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -42,18 +45,33 @@
 			</ul>
 		</div>
 	</nav>
-	<ajaxToolkit:TabContainer ID="TabContainer1" ClientID="TabContainer1" runat="server" ActiveTabIndex="0">
-    <ajaxToolkit:TabPanel runat="server" HeaderText="Miniaturas" ID="TabPanel1">
-        <asp:Repeater ID="rptMiniaturas" runat="server">
-            <ItemTemplate>
-                <asp:Image ID="imgMiniatura" runat="server" ImageUrl='<%# Container.DataItem %>' />
-            </ItemTemplate>
-        </asp:Repeater>
-    </ajaxToolkit:TabPanel>
-    <ajaxToolkit:TabPanel runat="server" HeaderText="Visualização" ID="TabPanel2">
-        <asp:Panel ID="pnlVisualizacao" runat="server" />
-    </ajaxToolkit:TabPanel>
-</ajaxToolkit:TabContainer>
+    
+   <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Documentos</h1>
+    <asp:button runat="server" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" ></asp:button>
+  </div>
+  <div class="offcanvas-body" runat="server" >
+      <div runat="server" id="docpadro">
+
+      </div>
+      
+  
+       
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <h1 style="margin-left:35%;margin-top:3%">Documentos Padrões</h1>
+  <p> </p>
+  <p style="margin-left:30%;margin-top:5%;">Documentos Padrões do setor:</p>
+    <asp:Label ID="setor" Text="setor" runat="server" style="margin-left:40%;font-size:26px;" />
+    <br/>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-left:40%">
+    TESTE
+  </button>
+</div>
+        </form>
 </body>
 
 </html>

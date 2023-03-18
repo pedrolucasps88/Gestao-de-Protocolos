@@ -894,3 +894,5 @@ C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\
 C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\obj\Debug\Gestão de Protocolos.pdb
 C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.dll
 C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.xml
+C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.dll
+C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.xml

@@ -128,7 +128,7 @@ WHERE 1", connection2);
                 var index = e.Row.RowIndex;
                 var mensagem = ((List<chatCompleto>)Session["mensagens"])[index];
 
-                e.Row.Cells[9].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
+                e.Row.Cells[10].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
             }
 
         }

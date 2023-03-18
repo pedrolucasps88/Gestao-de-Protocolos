@@ -14,58 +14,21 @@ namespace Gestão_de_Protocolos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                string[] arquivos = Directory.GetFiles(Server.MapPath("~/Arquivos"));
-                List<string> miniaturas = new List<string>();
-                foreach (string arquivo in arquivos)
-                {
-                    if (Path.GetExtension(arquivo).ToLower() == ".pdf")
-                    {
-                        string miniatura = GerarMiniatura(arquivo);
-                        if (!string.IsNullOrEmpty(miniatura))
-                        {
-                            miniaturas.Add(miniatura);
-                        }
-                    }
-                }
-                rptMiniaturas.DataSource = miniaturas;
-                rptMiniaturas.DataBind();
-            }
-        }
+            string pasta = Server.MapPath("~/DocumentosPadroes/Thumbs"); 
+            string[] arquivos = Directory.GetFiles(pasta);
 
-        private string GerarMiniatura(string arquivo)
-        {
-            string miniatura = string.Empty;
-            try
+            for (int i = 0; i < arquivos.Length; i++)
             {
-                GhostscriptVersionInfo gvi = new GhostscriptVersionInfo(@"C:\Program Files\gs\gs9.53.3\bin\gswin64c.exe");
-                using (var rasterizer = new GhostscriptRasterizer())
+                string nomeArquivo = Path.GetFileName(arquivos[i]);
+                if (Path.GetExtension(nomeArquivo) == ".png")
                 {
-                    //rasterizer.Open(arquivo, gvi, false);
-                    //Image img = rasterizer.GetPage(100, 100, 1);
-                    //using (MemoryStream ms = new MemoryStream())
-                    //{
-                    //    img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                    //    miniatura = "data:image/png;base64," + Convert.ToBase64String(ms.ToArray());
-                    //}
+                    
+                     docpadro.InnerHtml +="<br/> <a href='/DocumentosPadroes/Documentos/"+ nomeArquivo.Replace(".png",".pdf") + "' target='_blank' ><img src='/test/"+ nomeArquivo +"'style='width: 200px; height: 250px;'/> </a><br/> ";
                 }
             }
-            catch (Exception ex)
-            {
-                miniatura = string.Empty;
-            }
-            return miniatura;
+
+
         }
 
-        protected void rptMiniaturas_ItemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
-            {
-                string miniatura = e.Item.DataItem.ToString();
-                Image imgMiniatura = e.Item.FindControl("imgMiniatura") as Image;
-                imgMiniatura.Attributes["onclick"] = "MostrarPDF('" + miniatura + "')";
-            }
-        }
     }
 }
