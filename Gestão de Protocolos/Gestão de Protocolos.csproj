@@ -211,6 +211,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
+    <Content Include="DocumentosPadroes\Thumbs\Manutenção\DOCUMENTO_TESTE.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Qualidade\DOCUMENTO_TESTE.png" />
+    <Content Include="DocumentosPadroes\Thumbs\RH\DOCUMENTO_TESTE.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Secretaria\DOCUMENTO_TESTE.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,6 +228,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Anexos\DOCUMENTO_TESTE.pdf" />
     <Content Include="DocumentosPadroes\Documentos\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Manutenção\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Qualidade\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\RH\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Secretaria\DOCUMENTO_TESTE.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -256,8 +264,10 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="TelaAdmin\Inserir.aspx" />
+    <Content Include="TelaAdmin\NovoDoc.aspx" />
     <Content Include="TelaAdmin\TelaDeAdmin.aspx" />
     <Content Include="TelaAdmin\Update.aspx" />
+    <Content Include="TelaAdmin\VerDoc.aspx" />
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
@@ -297,6 +307,7 @@
     <Compile Include="Classes\chatCompleto.cs" />
     <Compile Include="Classes\Funcionarios.cs" />
     <Compile Include="Classes\Mensagem.cs" />
+    <Compile Include="Classes\Setor.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -350,6 +361,13 @@
     <Compile Include="TelaAdmin\Inserir.aspx.designer.cs">
       <DependentUpon>Inserir.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TelaAdmin\NovoDoc.aspx.cs">
+      <DependentUpon>NovoDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaAdmin\NovoDoc.aspx.designer.cs">
+      <DependentUpon>NovoDoc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TelaAdmin\TelaDeAdmin.aspx.cs">
       <DependentUpon>TelaDeAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -363,6 +381,13 @@
     </Compile>
     <Compile Include="TelaAdmin\Update.aspx.designer.cs">
       <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAdmin\VerDoc.aspx.cs">
+      <DependentUpon>VerDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaAdmin\VerDoc.aspx.designer.cs">
+      <DependentUpon>VerDoc.aspx</DependentUpon>
     </Compile>
     <Compile Include="TelaEnvio\TelaDeEnvio.aspx.cs">
       <DependentUpon>TelaDeEnvio.aspx</DependentUpon>
@@ -402,7 +427,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DocumentosPadroes\Thumbs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

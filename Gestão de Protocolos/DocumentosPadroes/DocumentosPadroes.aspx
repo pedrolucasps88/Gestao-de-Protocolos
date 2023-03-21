@@ -31,7 +31,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="../THome/Home.aspx">
                             <i class="fa fa-home"></i>
-                            Home
+                            HOME
           <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -53,21 +53,29 @@
                     </li>
                  
                 </ul>
-                <ul class="navbar-nav ">
+                  <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-bell">
-                                <span class="badge badge-info">11</span>
+                                <span class="badge badge-info">+</span>
                             </i>
-                            Test
+                            SUPORTE
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-globe">
-                                <span class="badge badge-success">11</span>
+                                <span class="badge badge-success">@</span>
                             </i>
-                            Test
+                            PERFIL
+                        </a>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="../Login/Login.aspx">
+                            <i class="fa fa-globe">
+                                <span class="badge badge-danger"><<</span>
+                            </i>
+                            SAIR
                         </a>
                     </li>
                 </ul>
@@ -92,7 +100,7 @@
 
 <div class="container-fluid mt-3">
   <h1 style="margin-left:35%;margin-top:3%">Documentos Padrões</h1>
-  <p> </p>
+  <p style="margin-left:35%;margin-top:5%"> Bem Vindo,</p><asp:Label ID="nome" Text="fulano"  runat="server" style="margin-left:40%;font-size:26px;"></asp:Label>
   <p style="margin-left:35%;margin-top:5%;">Documentos Padrões do setor:</p>
     <asp:Label ID="setor" Text="setor" runat="server" style="margin-left:40%;font-size:26px;" />
     <br/>

@@ -51,17 +51,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-bell">
-                                <span class="badge badge-info">11</span>
+                                <span class="badge badge-info">+</span>
                             </i>
-                            Test
+                            SUPORTE
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-globe">
-                                <span class="badge badge-success">11</span>
+                                <span class="badge badge-success">@</span>
                             </i>
-                            Test
+                            PERFIL
+                        </a>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="../Login/Login.aspx">
+                            <i class="fa fa-globe">
+                                <span class="badge badge-danger"><<</span>
+                            </i>
+                            SAIR
                         </a>
                     </li>
                 </ul>

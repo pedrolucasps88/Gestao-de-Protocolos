@@ -13,6 +13,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
     {
         private MySqlConnection connection;
         private MySqlConnection connection2;
+        private MySqlConnection connection3;
         protected void Page_Load(object sender, EventArgs e)
         {
         
@@ -76,7 +77,25 @@ WHERE 1", connection2);
             Session["mensagens"] = mensag;
             GridView2.DataSource = mensag;
             GridView2.DataBind();
-
+            connection2.Close();
+            connection3 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+            connection3.Open();
+            var comando3 = new MySqlCommand($@"SELECT * FROM `setor` WHERE 1;", connection3);
+            List<Setor> setores = new List<Setor>();
+            using (var reader3 = comando3.ExecuteReader())
+            {
+                while (reader3.Read())
+                {
+                    Setor recebidoss = new Setor();
+                    recebidoss.id = reader3.GetInt32("id");
+                    recebidoss.nome_setor = reader3.GetString("nome_setor");
+                    setores.Add(recebidoss);
+                }
+            }
+            Session["setores"] = setores;
+            GridView3.DataSource = setores;
+            GridView3.DataBind();
+            connection3.Close();
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -141,6 +160,27 @@ WHERE 1", connection2);
         protected void Unnamed_Click(object sender, EventArgs e)
         {
             Response.Redirect("../Login/Login.aspx");
+        }
+
+        protected void GridView3_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            int index = Convert.ToInt32(e.CommandArgument);
+            var docu = (List<Setor>)Session["setores"];
+            if (e.CommandName == "SEEDOCUM")
+            {
+                Response.Redirect("VerDoc.aspx?setor=" + docu[index].nome_setor);
+
+            }
+            if (e.CommandName == "NEWDOCUM")
+            {
+                Response.Redirect("NovoDoc.aspx?setor=" + docu[index].nome_setor);
+            }
+
+        }
+
+        protected void GridView3_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
         }
     }
 }

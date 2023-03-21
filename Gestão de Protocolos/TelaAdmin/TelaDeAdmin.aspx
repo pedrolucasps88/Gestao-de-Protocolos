@@ -51,7 +51,21 @@
     </Columns>
 
 </asp:GridView>
+
                 </div>
+              <h4 style="margin-left:30%;margin-top:0%">SETORES E DOCUMENTOS PADRÕES</h4>
+                <div style="width:800px;height:400px;margin-top:1%;margin-left:20%">
+                    <asp:GridView ID="GridView3" AutoGenerateColumns="false" runat="server"  Width="100%" Height="100%" OnRowCommand="GridView3_RowCommand" OnRowDataBound="GridView3_RowDataBound" >
+                   <Columns>
+                        <asp:BoundField DataField="id" HeaderText="id" />
+                       <asp:BoundField DataField="nome_setor" HeaderText="Nome do Setor" />
+                           <asp:ButtonField ButtonType="Link" CommandName="SEEDOCUM"  HeaderText="Ver Documentos Padrões" ControlStyle-CssClass="btn btn-outline-primary"  Text="Ver documentos" /> 
+                        <asp:ButtonField ButtonType="Link" CommandName="NEWDOCUM"  HeaderText="Adicionar Documentos" ControlStyle-CssClass="btn btn-outline-info"  Text="Adicionar Documentos" /> 
+                       </Columns>
+
+                    </asp:GridView>
+
+                    </div>
         </div>
     </form>
 </body>
