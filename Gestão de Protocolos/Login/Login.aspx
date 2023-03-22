@@ -33,7 +33,7 @@
        <br/>
        <asp:TextBox ID="txtpassword" runat="server" TextMode="password" name="password" CssClass="password" placeholder="Insira sua senha" value=""></asp:TextBox>
        <br/><br />
-       <asp:Button ID="btngo" runat="server" OnClick="btngo_Click" class="btn btn-success"  text="Entrar >>" ></asp:Button>
+       <asp:Button ID="btngo" runat="server" OnClick="btngo_Click" class="btn btn-success"  text="Entrar >>" > </asp:Button>
         <br />
         <asp:Label runat="server" ForeColor="Red" ID="lbl_aviso"></asp:Label>
     </div>

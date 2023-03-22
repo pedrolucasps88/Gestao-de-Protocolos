@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enviar mensagem</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8ca27dcaf9.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-image: linear-gradient(to right, #2b3a6b, #303d70, #344075, #39427a, #3e457f, #424a84, #464f8a, #4a548f, #4e5c96, #52649e, #566ca5, #5b74ac);">
      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,54 +22,52 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../THome/Home.aspx">
-                            <i class="fa fa-home"></i>
+                       <i class="fa-solid fa-house" style="color: #005af5;"></i>
                             HOME
           <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Caixa de Entrada/CaixaDeEntrada.aspx">
-                            <i class="fa fa-envelope-o">
-                                <span class="badge badge-danger">11</span>
-                            </i>
+                       <i class="fa-solid fa-envelope" style="color: #0058f0;"></i>
                             Caixa de Entrada
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">Envios de Mensagens
+
+                        <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">
+                            <i class="fa-solid fa-share-from-square" style="color: #0452d7;"></i>
+                            Envios de Mensagens
                         </a>
                     </li>
                    <li class="nav-item">
-                        <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">Documentação Padrão
+                       
+                        <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">
+                            <i class="fa-solid fa-file" style="color: #0d5de7;"></i>
+                            Documentação Padrão
                         </a>
                     </li>
                 </ul>
                    <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fa fa-bell">
-                                <span class="badge badge-info">+</span>
-                            </i>
+                            <i class="fa-solid fa-phone" style="color: #0257e8;"></i>
                             SUPORTE
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Perfil.aspx">
-                            <i class="fa fa-globe">
-                                <span class="badge badge-success">@</span>
-                            </i>
+                       <i class="fa-solid fa-id-card" style="color: #0f5adb;"></i>
                             PERFIL
                         </a>
                     </li>
                        <li class="nav-item">
                         <a class="nav-link" href="../Login/Login.aspx">
-                            <i class="fa fa-globe">
-                                <span class="badge badge-danger"><<</span>
-                            </i>
+                            <i class="fa-solid fa-person-running" style="color: #eb0017;"></i>
                             SAIR
                         </a>
                     </li>
@@ -77,12 +76,12 @@
             </div>
         </nav>
     
-    <div class="container" style="margin-top:0%;margin-left:35%;background-color:lightgray;width:400px;height:550px">
+    <div class="container" style="margin-top:0%;margin-left:35%;background-image: linear-gradient(to bottom, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);width:400px;height:600px;border-radius:15px">
         <form runat="server">
-            <h1>Enviar mensagem</h1>
+            <h1 style="margin-left:5%;color:aliceblue">Enviar mensagem</h1>
 
             <div class="form-group">
-                <label for="to">Para:</label>
+                <label for="to" style="color:aliceblue">Para:</label>
                 <asp:DropDownList runat="server" ID="setores" AutoPostBack="true" OnSelectedIndexChanged="setores_SelectedIndexChanged" >
                     <asp:ListItem Text="RH" Value="1" />
                     <asp:ListItem Text="Manutenção" Value="2" />
@@ -91,7 +90,7 @@
                 </asp:DropDownList>
             </div>
              <div class="form-group">
-                <label for="to">Para:</label>
+                <label for="to"  style="color:aliceblue">Para:</label>
                 <asp:DropDownList runat="server" ID="funcionarios">
                     <asp:ListItem Text="setor1"  Value="setor1" />
                     <asp:ListItem Text="setor2" Value="setor2"/>
@@ -99,22 +98,22 @@
             </div>
 
             <div class="form-group">
-                <label for="subject">Assunto:</label>
+                <label for="subject"  style="color:aliceblue">Assunto:</label>
                 <asp:TextBox runat="server" ID="assuntos" class="form-control" placeholder="Digite o assunto da mensagem" />
             </div>
 
             <div class="form-group">
-                <label for="body">Mensagem:</label>
+                <label for="body"  style="color:aliceblue">Mensagem:</label>
               
                 <asp:TextBox runat="server" ID="mensagema" class="form-control" TextMode="MultiLine" Rows="5" Placeholder="Digite a mensagem" />  
             </div>
 
             <div class="form-group">
-                <label for="attachment">Anexar arquivo:</label>
+                <label for="attachment"  style="color:aliceblue">Anexar arquivo:</label>
                 <asp:FileUpload runat="server" ID="arqui" />              
             </div>
 
-            <asp:Button runat="server" type="submit" OnClick="Unnamed_Click" Text="Enviar" class="btn btn-primary" style="background-color:black;width:100px;height:50px;font-size:16px;border-radius: 30px;margin-left:35%;"></asp:Button>
+            <asp:LinkButton runat="server" type="submit" OnClick="Unnamed_Click" Text="<i class='fa-solid fa-paper-plane' style='color: #fafcff;'></i> ENVIAR" class="btn btn-primary" style="background-image: linear-gradient(to right top, #0900cf, #272eda, #3c49e3, #5161ea, #6678f0);width:120px;height:40px;font-size:16px;border-radius: 30px;margin-left:32%;" ></asp:LinkButton>
         </form>
     </div>
 

@@ -11,6 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8ca27dcaf9.js" crossorigin="anonymous"></script>
     <title></title>
 </head>
 <body>
@@ -26,60 +27,58 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../THome/Home.aspx">
-                            <i class="fa fa-home"></i>
+                       <i class="fa-solid fa-house" style="color: #005af5;"></i>
                             HOME
           <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Caixa de Entrada/CaixaDeEntrada.aspx">
-                            <i class="fa fa-envelope-o">
-                                <span class="badge badge-danger">11</span>
-                            </i>
+                       <i class="fa-solid fa-envelope" style="color: #0058f0;"></i>
                             Caixa de Entrada
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">Envios de Mensagens
+
+                        <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">
+                            <i class="fa-solid fa-share-from-square" style="color: #0452d7;"></i>
+                            Envios de Mensagens
                         </a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">Documentação Padrão
+                   <li class="nav-item">
+                       
+                        <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">
+                            <i class="fa-solid fa-file" style="color: #0d5de7;"></i>
+                            Documentação Padrão
                         </a>
                     </li>
-                 
                 </ul>
-                  <ul class="navbar-nav ">
+                   <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fa fa-bell">
-                                <span class="badge badge-info">+</span>
-                            </i>
+                            <i class="fa-solid fa-phone" style="color: #0257e8;"></i>
                             SUPORTE
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Perfil.aspx">
-                            <i class="fa fa-globe">
-                                <span class="badge badge-success">@</span>
-                            </i>
+                       <i class="fa-solid fa-id-card" style="color: #0f5adb;"></i>
                             PERFIL
                         </a>
                     </li>
                        <li class="nav-item">
                         <a class="nav-link" href="../Login/Login.aspx">
-                            <i class="fa fa-globe">
-                                <span class="badge badge-danger"><<</span>
-                            </i>
+                            <i class="fa-solid fa-person-running" style="color: #eb0017;"></i>
                             SAIR
                         </a>
                     </li>
                 </ul>
-                            </div>
+              
+            </div>
         </nav>
     
     

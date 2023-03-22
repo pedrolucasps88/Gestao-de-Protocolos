@@ -211,6 +211,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="documentos ima.png" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
     <Content Include="DocumentosPadroes\Thumbs\Manutenção\DOCUMENTO_TESTE.png" />
     <Content Include="DocumentosPadroes\Thumbs\Qualidade\DOCUMENTO_TESTE.png" />
@@ -234,7 +235,6 @@
     <Content Include="DocumentosPadroes\Documentos\RH\DOCUMENTO_TESTE.pdf" />
     <Content Include="DocumentosPadroes\Documentos\Secretaria\DOCUMENTO_TESTE.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="jumbotrom.jpg" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="perfil.png" />
