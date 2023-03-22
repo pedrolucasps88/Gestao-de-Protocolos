@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../Perfil.aspx">
                             <i class="fa fa-globe">
                                 <span class="badge badge-success">@</span>
                             </i>

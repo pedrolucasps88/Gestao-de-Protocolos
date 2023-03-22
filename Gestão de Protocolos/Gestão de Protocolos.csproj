@@ -201,6 +201,7 @@
     <Content Include="About.aspx" />
     <Content Include="Anexos\carimbo.png" />
     <Content Include="Anexos\transferir.png" />
+    <Content Include="arquivos.jpg" />
     <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
     <Content Include="Contact.aspx" />
@@ -233,7 +234,10 @@
     <Content Include="DocumentosPadroes\Documentos\RH\DOCUMENTO_TESTE.pdf" />
     <Content Include="DocumentosPadroes\Documentos\Secretaria\DOCUMENTO_TESTE.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="jumbotrom.jpg" />
     <Content Include="Login\Login.aspx" />
+    <Content Include="Perfil.aspx" />
+    <Content Include="perfil.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -338,6 +342,13 @@
     </Compile>
     <Compile Include="Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

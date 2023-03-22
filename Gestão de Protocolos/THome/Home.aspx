@@ -13,7 +13,11 @@
      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<body>
+<body style="background-image: linear-gradient(to bottom, #474a4e, #5e5f63, #757679, #8d8d8f, #a5a5a6);">
+    <%--background-image: linear-gradient(to bottom, #474a4e, #6b6e73, #929499, #bbbcc2, #e6e6ec);--%>
+ <%--   #474A4E // #E6E6EC--%>
+    <%--#474A4E // #A5A5A6--%>
+
 
      <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark" style="margin-top: 0%">
             <a class="navbar-brand" href="../THome/Home.aspx" style="margin-top: 0%">GESTÃO DE PROTOCOLOS</a>
@@ -57,7 +61,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../Perfil.aspx">
                             <i class="fa fa-globe">
                                 <span class="badge badge-success">@</span>
                             </i>
@@ -78,10 +82,11 @@
 
     <form id="form1" runat="server">
         <div class="container body-content">
-            <div class="jumbotron">
-                <h1>Welcome to File Sharing Site!</h1>
-                <p class="lead">We make it easy to send and receive files securely and quickly.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Get started today</a></p>
+            <div class="jumbotron" style="margin-top:0%;width:1100px;height:400px;">
+                <img src="../arquivos.jpg" alt="" style="width:100%;height:100%;opacity:0.5;z-index:1;" />
+                <h1  style="position:absolute;margin-top:-15%;margin-left:15%;">Welcome to File Sharing Site!</h1>
+                <p class="lead" style="position:absolute;margin-top:-10%;margin-left:15%;">We make it easy to send and receive files securely and quickly.</p>
+                <p style="position:absolute;margin-top:-5%;margin-left:25%;"><a class="btn btn-primary btn-lg" href="#" role="button"  style="z-index:2;" >Get started today</a></p>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -100,7 +105,11 @@
                     <asp:Button Text="Sobre nós e o site" runat="server" class="btn btn-dark" href="#"/>
                 </div>
             </div>
+            <br />
             <hr />
+              <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Gestão de Protocolos</p>
+            </footer>
         </div>
 
     </form>
