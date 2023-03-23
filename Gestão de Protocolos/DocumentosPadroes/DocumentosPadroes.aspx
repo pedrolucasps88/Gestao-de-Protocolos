@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/8ca27dcaf9.js" crossorigin="anonymous"></script>
     <title></title>
 </head>
-<body>
+<body style="background-image: linear-gradient(to top, #2b3a6b, #303d70, #344075, #39427a, #3e457f, #424a84, #464f8a, #4a548f, #4e5c96, #52649e, #566ca5, #5b74ac);">
     <form id="form1" runat="server">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -98,15 +98,28 @@
 </div>
 
 <div class="container-fluid mt-3">
-  <h1 style="margin-left:35%;margin-top:3%">Documentos Padrões</h1>
-  <p style="margin-left:35%;margin-top:5%"> Bem Vindo,</p><asp:Label ID="nome" Text="fulano"  runat="server" style="margin-left:40%;font-size:26px;"></asp:Label>
-  <p style="margin-left:35%;margin-top:5%;">Documentos Padrões do setor:</p>
-    <asp:Label ID="setor" Text="setor" runat="server" style="margin-left:40%;font-size:26px;" />
+  <h1 style="margin-left:35%;margin-top:3%;color:aliceblue ">Documentos Padrões</h1>
+  <p style="margin-left:35%;margin-top:5%;color:aliceblue ;"> Bem Vindo,</p><asp:Label ID="nome" Text="fulano"  runat="server" style="margin-left:40%;font-size:26px;color:aliceblue ;"></asp:Label>
+  <p style="margin-left:35%;margin-top:5%;color:aliceblue ;">Documentos Padrões do setor:</p>
+    <asp:Label ID="setor" Text="setor" runat="server" style="margin-left:40%;font-size:26px;color:aliceblue ;" />
     <br/>
-  <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-left:40%;margin-top:2%">
+  <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-left:40%;margin-top:2%">
    < VER DOCUMENTOS >
   </button>
 </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
     </form>
 </body>
 </html>

@@ -30,7 +30,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
 
             //Conecta com o banco de dados e realiza a consulta.
             MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `setor` WHERE `id`= @selectedValue", conexão);
+            MySqlCommand command = new MySqlCommand("SELECT f.nome_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
             conexão.Open();
@@ -40,13 +40,13 @@ namespace Gestão_de_Protocolos.TelaEnvio
             funcionarios.Items.Clear();
 
             //Preenche o dropdown list com os resultados da consulta.
-            //while (reader.Read())
-            //{
-            //    ListItem item = new ListItem();
-            //    item.Text = reader["funcionarios"].ToString();
-            //    item.Value = reader["funcionarios"].ToString();
-            //    funcionarios.Items.Add(item);
-            //}
+            while (reader.Read())
+            {
+                ListItem item = new ListItem();
+                item.Text = reader["nome_Func"].ToString();
+                item.Value = reader["nome_Func"].ToString();
+                funcionarios.Items.Add(item);
+            }
 
             conexão.Close();
         }
@@ -92,7 +92,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
 
             //Conecta com o banco de dados e realiza a consulta.
             MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `setor` WHERE `id`= @selectedValue", conexão);
+            MySqlCommand command = new MySqlCommand("SELECT f.nome_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
             conexão.Open();
@@ -102,13 +102,13 @@ namespace Gestão_de_Protocolos.TelaEnvio
             funcionarios.Items.Clear();
 
             //Preenche o dropdown list com os resultados da consulta.
-            //while (reader.Read())
-            //{
-            //    ListItem item = new ListItem();
-            //    item.Text = reader["funcionarios"].ToString();
-            //    item.Value = reader["funcionarios"].ToString();
-            //    funcionarios.Items.Add(item);
-            //}
+            while (reader.Read())
+            {
+                ListItem item = new ListItem();
+                item.Text = reader["nome_Func"].ToString();
+                item.Value = reader["nome_Func"].ToString();
+                funcionarios.Items.Add(item);
+            }
 
             conexão.Close();
         }

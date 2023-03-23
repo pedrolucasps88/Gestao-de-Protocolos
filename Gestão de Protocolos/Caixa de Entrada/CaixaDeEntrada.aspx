@@ -7,7 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-image: linear-gradient(to left bottom, #2b3a6b, #303d70, #344075, #39427a, #3e457f, #424a84, #464f8a, #4a548f, #4e5c96, #52649e, #566ca5, #5b74ac);">
 
     <div class="container mt-3">
         <div class="row">
@@ -24,7 +24,7 @@
                 <!-- Lista de mensagens -->
  <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" RowStyle-BackColor="#FFFFFF" AlternatingRowStyle-BackColor="#F2F2F2"  >
     <Columns>
-        <asp:BoundField DataField="Remetente" HeaderText="Remetente" ItemStyle-HorizontalAlign="Center"  />
+        <asp:BoundField DataField="Remetente" HeaderText="Remetente" ItemStyle-HorizontalAlign="Center" />
         <asp:BoundField DataField="nomeremetente" HeaderText="Nome do Remetente" ItemStyle-HorizontalAlign="Center"/>
         <asp:BoundField DataField="cargo" HeaderText="cargo" />
         <asp:BoundField DataField="setorreme" HeaderText="setor do remetente"  ItemStyle-HorizontalAlign="Center"/>

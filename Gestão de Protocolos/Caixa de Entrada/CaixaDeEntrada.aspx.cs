@@ -70,7 +70,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                 var index = e.Row.RowIndex;
                 var mensagem = ((List<Mensagem>)Session["mensagens"])[index];
 
-                e.Row.Cells[3].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
+                e.Row.Cells[6].Text = "<a href='../Anexos/" + mensagem.anexo + "' target='_blank'>Download</a>";
             }
         }
 

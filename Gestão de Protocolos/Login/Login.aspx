@@ -27,7 +27,7 @@
         
         <label >Matricula do Funcionário:</label>
         <br/>
-       <asp:TextBox ID="txtid_funcionario" runat="server" name="id_funcionario" CssClass="id_funcionario" placeholder="Insira sua Matricua" value=""></asp:TextBox>
+       <asp:TextBox ID="txtid_funcionario" runat="server" name="id_funcionario" CssClass="id_funcionario" placeholder="Insira sua Matricula" value=""></asp:TextBox>
        <br/>
        <label class="label">Senha:</label>
        <br/>

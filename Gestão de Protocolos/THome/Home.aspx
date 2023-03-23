@@ -88,22 +88,22 @@
 
     <form id="form1" runat="server">
         <div class="container body-content">
-            <div class="jumbotron" style="margin-top:0%;width:1100px;height:400px;background-image: linear-gradient(to right, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);">
+            <div class="jumbotron" style="margin-top:1%;width:1100px;height:400px;background-image: linear-gradient(to right, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);">
                 <img src="../documentos ima.png" alt="" style="width:100%;height:100%;opacity:0.8;z-index:1;" />
-                <h1  style="position:absolute;margin-top:-20%;margin-left:10%;color:#0f5adb;">Bem-Vindo ao site de Gestão de Protocolos!</h1>
-                <p class="lead" style="position:absolute;margin-top:-5%;margin-left:20%;color:azure;">Melho envio e recebimentos de arquivos com segurança garantida</p>
-                <p style="position:absolute;margin-top:0%;margin-left:33%;"><a class="btn btn-primary" href="#" role="button"  style="z-index:2;" ><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i> Rapido Tutorial</a></p>
+                <h1  style="position:absolute;margin-top:-20%;margin-left:7%;color:#0f5adb;">Bem-Vindo ao site de Gestão de Protocolos!</h1>
+                <p class="lead" style="position:absolute;margin-top:-2%;margin-left:15%;color:black;font-family: fantasy;">Melho envio e recebimentos de arquivos com segurança garantida</p>
+                <p style="position:absolute;margin-top:0%;margin-left:27%;"><a class="btn btn-dark" href="#" role="button"  style="z-index:2;" ><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i> Rapido Tutorial</a></p>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <h2 style="color:aliceblue;">Envie os Documentos de forma Facil</h2>
                     <p style="color:aliceblue;">Nossa interface simples e intuitiva facilita o upload de seus arquivos e o envio deles com segurança ao destinatário pretendido.</p>
-                <asp:LinkButton Text="Envio <i class='fa-solid fa-paper-plane' style='color: #fafcff;'></i>" runat="server" class="btn btn-info" ID="Envio" href="../TelaEnvio/TelaDeEnvio.aspx" style="margin-left:20%"/>
+                <asp:LinkButton Text="Envio <i class='fa-solid fa-paper-plane' style='color: #fafcff;'></i>" runat="server" class="btn btn-dark" ID="Envio" href="../TelaEnvio/TelaDeEnvio.aspx" style="margin-left:20%"/>
                 </div>
                 <div class="col-md-4">
                     <h2 style="color:aliceblue;">Receba arquivos instantaneamente</h2>
                     <p style="color:aliceblue;">Com nossos servidores rápidos e confiáveis, você pode receber seus arquivos em segundos, não importa onde você esteja no mundo.</p>
-               <asp:LinkButton Text="Caixa de entrada <i class='fa-solid fa-envelope' style='color: #ffffff;'></i>" runat="server" class="btn btn-warning" ID="CaixaE" href="/Caixa de Entrada/CaixaDeEntrada.aspx" style="margin-left:20%"/>
+               <asp:LinkButton Text="Caixa de entrada <i class='fa-solid fa-envelope' style='color: #ffffff;'></i>" runat="server" class="btn btn-dark" ID="CaixaE" href="/Caixa de Entrada/CaixaDeEntrada.aspx" style="margin-left:20%"/>
                     </div>
                 <div class="col-md-4">
                     <h2 style="color:aliceblue;">Seguro e confiável</h2>

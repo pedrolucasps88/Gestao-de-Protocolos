@@ -76,7 +76,7 @@
             </div>
         </nav>
     
-    <div class="container" style="margin-top:0%;margin-left:35%;background-image: linear-gradient(to bottom, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);width:400px;height:600px;border-radius:15px">
+    <div class="container" style="margin-top:1%;margin-left:35%;background-image: linear-gradient(to bottom, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);width:400px;height:600px;border-radius:15px">
         <form runat="server">
             <h1 style="margin-left:5%;color:aliceblue">Enviar mensagem</h1>
 
