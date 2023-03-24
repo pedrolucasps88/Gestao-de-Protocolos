@@ -201,6 +201,7 @@
     <Content Include="About.aspx" />
     <Content Include="Anexos\carimbo.png" />
     <Content Include="Anexos\transferir.png" />
+    <Content Include="arquivo.png" />
     <Content Include="arquivos.jpg" />
     <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
@@ -276,6 +277,7 @@
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
     <Content Include="test\403881.png" />
+    <Content Include="test\tEST.aspx" />
     <Content Include="test\transferir.png" />
     <Content Include="THome\Home.aspx" />
     <Content Include="Updates.txt" />
@@ -420,6 +422,13 @@
     </Compile>
     <Compile Include="Teste.aspx.designer.cs">
       <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\tEST.aspx.cs">
+      <DependentUpon>tEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\tEST.aspx.designer.cs">
+      <DependentUpon>tEST.aspx</DependentUpon>
     </Compile>
     <Compile Include="THome\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

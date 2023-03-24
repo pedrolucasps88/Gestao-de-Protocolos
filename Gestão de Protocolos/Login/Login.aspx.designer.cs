@@ -46,7 +46,7 @@ namespace Gestão_de_Protocolos.Login {
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btngo;
+        protected global::System.Web.UI.WebControls.LinkButton btngo;
         
         /// <summary>
         /// Controle lbl_aviso.

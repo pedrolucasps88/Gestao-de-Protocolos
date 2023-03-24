@@ -88,13 +88,13 @@
 
     <form id="form1" runat="server">
         <div class="container body-content">
-            <div class="jumbotron" style="margin-top:1%;width:1100px;height:400px;background-image: linear-gradient(to right, #4f6eb7, #637dc5, #768dd3, #899de2, #9cadf0);">
-                <img src="../documentos ima.png" alt="" style="width:100%;height:100%;opacity:0.8;z-index:1;" />
-                <h1  style="position:absolute;margin-top:-20%;margin-left:7%;color:#0f5adb;">Bem-Vindo ao site de Gestão de Protocolos!</h1>
-                <p class="lead" style="position:absolute;margin-top:-2%;margin-left:15%;color:black;font-family: fantasy;">Melho envio e recebimentos de arquivos com segurança garantida</p>
-                <p style="position:absolute;margin-top:0%;margin-left:27%;"><a class="btn btn-dark" href="#" role="button"  style="z-index:2;" ><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i> Rapido Tutorial</a></p>
-            </div>
-            <div class="row">
+           
+                <img src="../documentos ima.png" alt="" style="width:1100px;height:400px;opacity:0.8;z-index:1;margin-top:1%;" />
+                <h1  style="position:absolute;margin-top:-25%;margin-left:8%;color:#0f5adb;">Bem-Vindo ao site de Gestão de Protocolos!</h1>
+                <p class="lead" style="position:absolute;margin-top:1%;margin-left:15%;color:aliceblue;font-family: fantasy;">Melhor envio e recebimentos de arquivos com segurança garantida</p>
+                <p style="position:absolute;margin-top:4%;margin-left:27%;"><a class="btn btn-dark" href="#" role="button"  style="z-index:2;" ><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i> Rapido Tutorial</a></p>
+            
+            <div class="row" style="margin-top:10%;">
                 <div class="col-md-4">
                     <h2 style="color:aliceblue;">Envie os Documentos de forma Facil</h2>
                     <p style="color:aliceblue;">Nossa interface simples e intuitiva facilita o upload de seus arquivos e o envio deles com segurança ao destinatário pretendido.</p>
