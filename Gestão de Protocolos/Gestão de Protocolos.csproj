@@ -274,6 +274,11 @@
     <Content Include="TelaAdmin\Update.aspx" />
     <Content Include="TelaAdmin\VerDoc.aspx" />
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
+    <Content Include="TelaInicial\documentos-espalhados.jpg" />
+    <Content Include="TelaInicial\essa.jpg" />
+    <Content Include="TelaInicial\guarda-documentos.jpg" />
+    <Content Include="TelaInicial\Style.css" />
+    <Content Include="TelaInicial\TelaInicial.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
     <Content Include="Teste.aspx" />
     <Content Include="test\403881.png" />
@@ -408,6 +413,13 @@
     </Compile>
     <Compile Include="TelaEnvio\TelaDeEnvio.aspx.designer.cs">
       <DependentUpon>TelaDeEnvio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial\TelaInicial.aspx.cs">
+      <DependentUpon>TelaInicial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaInicial\TelaInicial.aspx.designer.cs">
+      <DependentUpon>TelaInicial.aspx</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal\TelaPrincipal.aspx.cs">
       <DependentUpon>TelaPrincipal.aspx</DependentUpon>
