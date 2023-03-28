@@ -274,9 +274,13 @@
     <Content Include="TelaAdmin\Update.aspx" />
     <Content Include="TelaAdmin\VerDoc.aspx" />
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
+    <Content Include="TelaInicial\automacao.png" />
+    <Content Include="TelaInicial\caixa-de-entrada.png" />
     <Content Include="TelaInicial\documentos-espalhados.jpg" />
+    <Content Include="TelaInicial\escudo-seguro.png" />
     <Content Include="TelaInicial\essa.jpg" />
     <Content Include="TelaInicial\guarda-documentos.jpg" />
+    <Content Include="TelaInicial\imediato.png" />
     <Content Include="TelaInicial\Style.css" />
     <Content Include="TelaInicial\TelaInicial.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />

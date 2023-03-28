@@ -22,28 +22,28 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../THome/Home.aspx">
-                       <i class="fa-solid fa-house" style="color: #005af5;"></i>
+                       <i class="fa-solid fa-house" style="color: gainsboro;"></i>
                             HOME
           <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Caixa de Entrada/CaixaDeEntrada.aspx">
-                       <i class="fa-solid fa-envelope" style="color: #0058f0;"></i>
+                       <i class="fa-solid fa-envelope" style="color: gainsboro;"></i>
                             Caixa de Entrada
                         </a>
                     </li>
                     <li class="nav-item">
 
                         <a class="nav-link" href="../TelaEnvio/TelaDeEnvio.aspx">
-                            <i class="fa-solid fa-share-from-square" style="color: #0452d7;"></i>
+                            <i class="fa-solid fa-share-from-square" style="color: gainsboro;"></i>
                             Envios de Mensagens
                         </a>
                     </li>
                    <li class="nav-item">
                        
                         <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">
-                            <i class="fa-solid fa-file" style="color: #0d5de7;"></i>
+                            <i class="fa-solid fa-file" style="color: gainsboro;"></i>
                             Documentação Padrão
                         </a>
                     </li>
@@ -51,13 +51,13 @@
                    <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fa-solid fa-phone" style="color: #0257e8;"></i>
+                            <i class="fa-solid fa-phone" style="color: gainsboro;"></i>
                             SUPORTE
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Perfil.aspx">
-                       <i class="fa-solid fa-id-card" style="color: #0f5adb;"></i>
+                       <i class="fa-solid fa-id-card" style="color: gainsboro;"></i>
                             PERFIL
                         </a>
                     </li>
