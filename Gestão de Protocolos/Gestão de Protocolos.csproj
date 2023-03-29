@@ -212,6 +212,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Divperf.css" />
     <Content Include="documentos ima.png" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
     <Content Include="DocumentosPadroes\Thumbs\Manutenção\DOCUMENTO_TESTE.png" />

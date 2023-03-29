@@ -99,7 +99,6 @@ C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\b
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Antlr3.Runtime.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.bootstrap.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Google.Protobuf.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\itext.commons.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\itextsharp.dll
@@ -122,7 +121,6 @@ C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\b
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.ScriptManager.WebForms.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\MySqlConnector.dll
-C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Serilog.Sinks.File.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\System.Buffers.dll
@@ -896,3 +894,5 @@ C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghosts
 C:\Users\cynth\Desktop\tcc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.xml
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.dll
 C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Ghostscript.NET.xml
+C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\BouncyCastle.Crypto.dll
+C:\Users\LAB201.SERVEDUC\Desktop\tc\Gestao-de-Protocolos\Gestão de Protocolos\bin\Newtonsoft.Json.dll
