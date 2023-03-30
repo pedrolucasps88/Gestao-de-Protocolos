@@ -123,8 +123,11 @@
 
             <h3 style="color:white;">OBJETIVOS DO SOFTWARE</h3>
             <asp:Image ImageUrl="~/TelaInicial/automacao.png" runat="server" Class="subi" style="margin-left:20%;margin-top:15%;width:200px;height:200px;position:absolute" />
-            <asp:Image ImageUrl="~/TelaInicial/imediato.png" runat="server"  Class="subi" style="margin-left:50%;margin-top:0%;width:200px;height:200px;position:absolute" />
-            <asp:Image ImageUrl="~/TelaInicial/escudo-seguro.png" runat="server"  Class="subi" style="margin-left:80%;margin-top:10%;width:200px;height:200px;position:absolute" />
+            <h3 style="margin-top:20%;margin-left:15%;color:white;position:absolute;">Automatização dos processos</h3>
+            <asp:Image ImageUrl="~/TelaInicial/imediato.png" runat="server"  Class="desce" style="margin-left:50%;margin-top:0%;width:200px;height:200px;position:absolute" />
+            <h3 style="margin-top:20%;margin-left:45%;color:white;position:absolute;">Serviço rapido</h3>
+            <asp:Image ImageUrl="~/TelaInicial/escudo-seguro.png" runat="server"  Class="outro" style="margin-left:80%;margin-top:10%;width:200px;height:200px;position:absolute" />
+            <h3 style="margin-top:20%;margin-left:60%;color:white;position:absolute;">Seguro e confiavel</h3>
         </div>
         
         <footer id="footer"  style="width:99%;margin-top:1%;margin-left:0.5%;background-image: linear-gradient(to right top, #12202e, #162434, #1a283a, #1e2d41, #233147, #26344c, #2a3850, #2d3b55, #303e59, #33415d, #374362, #3a4666); border: 2px solid;padding: 10px;box-shadow: 6px 4px inset;border-radius: 10px;text-align:left">

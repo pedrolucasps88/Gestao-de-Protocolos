@@ -18,8 +18,8 @@
     <style>
         .profile-card {
             position: absolute;
-            margin-left: 60%;
-            margin-top: -47%;
+            margin-left: -15%;
+            margin-top: 0%;
             width: 300px;
             height: 200px;
             background-color: #fff;
@@ -27,6 +27,7 @@
             border-radius: 10px;
             display: none;
             padding: 20px;
+            z-index:1000;
         }
 
         .nome22:hover + .profile-card {
@@ -118,6 +119,7 @@
                 </li>
                 <li class="nav-item" style="margin-top: 3%">
                     <div class="nome22">
+                        
                         <asp:Label ID="nome" Class="" Style="color: white;" Text="<i class='fa-solid fa-id-card' style='color: gainsboro;'></i>" runat="server" />
                         <%--     <a class="nav-link" href="../Perfil.aspx">
                        <i class="fa-solid fa-id-card" style="color: gainsboro;"></i>
@@ -125,6 +127,7 @@
                         </a>--%>
                     </div>
                      <div class="profile-card">
+                 <asp:image imageurl="~/do-utilizador.png" runat="server" style="width:80px;height:80px;position:absolute;margin-top:3%;" />
                 <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique"></asp:Label><br />
                 <asp:Label Text="Cargo" ID="cargo" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
                 <asp:Label Text="setor" ID="setor" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />

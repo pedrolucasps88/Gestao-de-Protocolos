@@ -17,6 +17,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
     {
         private MySqlConnection connection;
         private MySqlConnection connection2;
+        private MySqlConnection connection3;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -29,36 +30,55 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                 Session["usuariologado"].ToString();
             }
 
-            connection = new MySqlConnection(SiteMaster.ConnectionString);
-            connection.Open();
-            var comando = new MySqlCommand($@"SELECT c.matricula_remetente,f.nome_Func,f.cargo,s.nome_setor,c.matricula_destinatario,c.assunto,c.mensagem,c.anexo,c.hora 
+            int num_matricu;
+            connection3 = new MySqlConnection(SiteMaster.ConnectionString);
+            connection3.Open();
+            MySqlCommand commandinho = new MySqlCommand("SELECT f.Matricula_Func,f.cargo, f.nome_Func,s.nome_setor FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE `Matricula_Func`=" + Session["usuariologado"].ToString(), connection3);
+            using (var reader1 = commandinho.ExecuteReader())
+            {
+                while (reader1.Read())
+                {
+
+                    nome.Text = nome.Text + " " + reader1.GetString("nome_Func");
+                    Label1.Text = reader1.GetString("nome_Func");
+                    cargo.Text = reader1.GetString("cargo");
+                    setor.Text = reader1.GetString("nome_setor");
+                    num_matricu = reader1.GetInt32("Matricula_Func");
+                    matricula.Text = Convert.ToString(num_matricu);
+                }
+
+
+                connection = new MySqlConnection(SiteMaster.ConnectionString);
+                connection.Open();
+                var comando = new MySqlCommand($@"SELECT c.matricula_remetente,f.nome_Func,f.cargo,s.nome_setor,c.matricula_destinatario,c.assunto,c.mensagem,c.anexo,c.hora 
                                            FROM chat c
                                            INNER JOIN funcionarios f ON c.matricula_remetente= f.Matricula_Func
                                            INNER JOIN setor s on f.id_Setor=s.id
                                            WHERE `matricula_destinatario`=" + Session["usuariologado"].ToString(), connection);
-            List<Mensagem> mensagemrece = new List<Mensagem>();
+                List<Mensagem> mensagemrece = new List<Mensagem>();
 
 
-            using (var reader = comando.ExecuteReader())
-            {
-                while (reader.Read())
+                using (var reader = comando.ExecuteReader())
                 {
-                    Mensagem recebidos = new Mensagem();
-                    recebidos.destinatario = reader.GetInt32("matricula_remetente");
-                    recebidos.nomeremetente = reader.GetString("nome_Func");
-                    recebidos.cargo = reader.GetString("cargo");
-                    recebidos.setorreme = reader.GetString("nome_setor");
-                    recebidos.assunto = reader.GetString("assunto");
-                    recebidos.mensagem = reader.GetString("mensagem");
-                    recebidos.anexo = reader.GetString("anexo");
-                    recebidos.hora = reader.GetDateTime("hora");
-                    mensagemrece.Add(recebidos);
+                    while (reader.Read())
+                    {
+                        Mensagem recebidos = new Mensagem();
+                        recebidos.destinatario = reader.GetInt32("matricula_remetente");
+                        recebidos.nomeremetente = reader.GetString("nome_Func");
+                        recebidos.cargo = reader.GetString("cargo");
+                        recebidos.setorreme = reader.GetString("nome_setor");
+                        recebidos.assunto = reader.GetString("assunto");
+                        recebidos.mensagem = reader.GetString("mensagem");
+                        recebidos.anexo = reader.GetString("anexo");
+                        recebidos.hora = reader.GetDateTime("hora");
+                        mensagemrece.Add(recebidos);
+                    }
                 }
-            }
 
-            Session["mensagens"] = mensagemrece;
-            GridView1.DataSource = mensagemrece;
-            GridView1.DataBind();
+                Session["mensagens"] = mensagemrece;
+                GridView1.DataSource = mensagemrece;
+                GridView1.DataBind();
+            }
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)

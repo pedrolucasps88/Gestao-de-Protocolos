@@ -203,6 +203,7 @@
     <Content Include="Anexos\transferir.png" />
     <Content Include="arquivo.png" />
     <Content Include="arquivos.jpg" />
+    <Content Include="Cadastramento.aspx" />
     <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
     <Content Include="Contact.aspx" />
@@ -213,6 +214,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Divperf.css" />
+    <Content Include="do-utilizador.png" />
     <Content Include="documentos ima.png" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
     <Content Include="DocumentosPadroes\Thumbs\Manutenção\DOCUMENTO_TESTE.png" />
@@ -306,6 +308,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Cadastramento.aspx.cs">
+      <DependentUpon>Cadastramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastramento.aspx.designer.cs">
+      <DependentUpon>Cadastramento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro\Cadastro.aspx.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
