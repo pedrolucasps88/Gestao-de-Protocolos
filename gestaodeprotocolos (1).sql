@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Mar-2023 às 20:56
+-- Tempo de geração: 01-Abr-2023 às 00:48
 -- Versão do servidor: 10.4.27-MariaDB
--- versão do PHP: 8.1.12
+-- versão do PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -68,11 +68,10 @@ CREATE TABLE `funcionarios` (
 
 INSERT INTO `funcionarios` (`Matricula_Func`, `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES
 (1, 'Gestor', 'vagner da silva', '1234', 1),
-(2, 'Estagiario', 'Wilson de moura', 'senha', 1),
-(3, 'Mecânico', 'joão jackson', '4567', 2),
+(3, 'coordenador', 'matheus santos', '4567', 3),
 (4, 'diretor', 'jessica aline', 'diretora', 2),
-(5, 'recepção', 'josé da silva', '1234', 3),
-(6, 'diretor', 'valesca dos santos', '1234', 3);
+(7, 'Professor', 'rodrigo paes', '12354', 6),
+(9, 'aluno', 'patricia melo ', '11223354', 7);
 
 -- --------------------------------------------------------
 
@@ -91,9 +90,10 @@ CREATE TABLE `setor` (
 
 INSERT INTO `setor` (`id`, `nome_setor`) VALUES
 (1, 'RH'),
-(2, 'Manutenção'),
+(2, 'diretoria'),
 (3, 'Secretaria'),
-(4, 'Qualidade');
+(6, 'Professor'),
+(7, 'alunos');
 
 --
 -- Índices para tabelas despejadas
@@ -134,13 +134,13 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT de tabela `funcionarios`
 --
 ALTER TABLE `funcionarios`
-  MODIFY `Matricula_Func` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Matricula_Func` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `setor`
 --
 ALTER TABLE `setor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restrições para despejos de tabelas
