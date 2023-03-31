@@ -214,6 +214,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="desempenho.jpg" />
     <Content Include="Divperf.css" />
     <Content Include="do-utilizador.png" />
     <Content Include="documentos ima.png" />
@@ -222,6 +223,7 @@
     <Content Include="DocumentosPadroes\Thumbs\Qualidade\DOCUMENTO_TESTE.png" />
     <Content Include="DocumentosPadroes\Thumbs\RH\DOCUMENTO_TESTE.png" />
     <Content Include="DocumentosPadroes\Thumbs\Secretaria\DOCUMENTO_TESTE.png" />
+    <Content Include="estudodiri.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -240,6 +242,7 @@
     <Content Include="DocumentosPadroes\Documentos\RH\DOCUMENTO_TESTE.pdf" />
     <Content Include="DocumentosPadroes\Documentos\Secretaria\DOCUMENTO_TESTE.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Implementação.jpg" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="perfil.png" />
@@ -278,13 +281,15 @@
     <Content Include="TelaAdmin\Update.aspx" />
     <Content Include="TelaAdmin\VerDoc.aspx" />
     <Content Include="TelaEnvio\TelaDeEnvio.aspx" />
+    <Content Include="TelaInicial\assinatura-digital.jpg" />
     <Content Include="TelaInicial\automacao.png" />
     <Content Include="TelaInicial\caixa-de-entrada.png" />
     <Content Include="TelaInicial\documentos-espalhados.jpg" />
     <Content Include="TelaInicial\escudo-seguro.png" />
-    <Content Include="TelaInicial\essa.jpg" />
     <Content Include="TelaInicial\guarda-documentos.jpg" />
     <Content Include="TelaInicial\imediato.png" />
+    <Content Include="TelaInicial\muitodoc.jpg" />
+    <Content Include="TelaInicial\seta.png" />
     <Content Include="TelaInicial\Style.css" />
     <Content Include="TelaInicial\TelaInicial.aspx" />
     <Content Include="TelaPrincipal\TelaPrincipal.aspx" />

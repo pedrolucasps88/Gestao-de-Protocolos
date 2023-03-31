@@ -139,6 +139,23 @@
             transform: translateY(0px);
         }
     }
+.seta {
+    width: 50px;
+    height: 100px;
+    animation: setinha 4s infinite linear alternate;
+    
+}
+
+
+@keyframes setinha {
+    from {
+        margin-top: 0%
+    }
+
+    to {
+        margin-top: 10%
+    }
+}
 
     @keyframes subir {
         from {

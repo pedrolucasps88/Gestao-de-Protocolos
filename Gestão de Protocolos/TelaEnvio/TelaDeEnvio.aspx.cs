@@ -35,7 +35,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
                 while (reader1.Read())
                 {
 
-                    nome.Text = nome.Text + " " + reader1.GetString("nome_Func");
+                    nome.Text = " " + reader1.GetString("nome_Func");
                     Label1.Text = reader1.GetString("nome_Func");
                     cargo.Text = reader1.GetString("cargo");
                     setor.Text = reader1.GetString("nome_setor");
@@ -86,7 +86,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
             int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString()); ;
-            int matriculadestinatario = 4/*Convert.ToInt32(funcionarios.SelectedValue)*/;
+            int matriculadestinatario = Convert.ToInt32(funcionarios.SelectedValue);
 
 
             connection.Open();

@@ -22,7 +22,7 @@ namespace Gestão_de_Protocolos.THome
                 while (reader.Read())
                 {
                     
-                    nome.Text = nome.Text +" "+  reader.GetString("nome_Func");
+                    nome.Text = " " + reader.GetString("nome_Func");
                     Label1.Text= reader.GetString("nome_Func");
                     cargo.Text = reader.GetString("cargo");
                     setor.Text = reader.GetString("nome_setor");
