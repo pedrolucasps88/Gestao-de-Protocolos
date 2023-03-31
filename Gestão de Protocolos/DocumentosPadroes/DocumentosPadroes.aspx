@@ -113,7 +113,7 @@
                     </li>
                      <li class="nav-item" style="margin-top: 3%">
                     <div class="nome22">
-                        <asp:Label ID="nome1" Class="" Style="color: white;" Text="<i class='fa-solid fa-id-card' style='color: gainsboro;'></i>" runat="server" />
+                        <i class='fa-solid fa-id-card' style='color: gainsboro;'></i><asp:Label ID="nome1" Class="" Style="color: white;" Text="" runat="server" />
                         <%--     <a class="nav-link" href="../Perfil.aspx">
                        <i class="fa-solid fa-id-card" style="color: gainsboro;"></i>
                             PERFIL

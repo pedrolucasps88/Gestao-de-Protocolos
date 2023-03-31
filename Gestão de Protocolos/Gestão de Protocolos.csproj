@@ -203,6 +203,7 @@
     <Content Include="Anexos\transferir.png" />
     <Content Include="arquivo.png" />
     <Content Include="arquivos.jpg" />
+    <Content Include="arquivotela.jpg" />
     <Content Include="Cadastramento.aspx" />
     <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />

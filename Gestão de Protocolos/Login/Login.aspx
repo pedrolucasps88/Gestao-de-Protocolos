@@ -13,6 +13,7 @@
 <body style="background-image: radial-gradient(circle, #2b3a6b, #303d70, #344075, #39427a, #3e457f, #424a84, #464f8a, #4a548f, #4e5c96, #52649e, #566ca5, #5b74ac);">
     <form id="form1" runat="server">
          <div class="initalpage">
+                <asp:Button Text="<< Voltar" runat="server" class="btn btn-outline-dark" OnClick="Unnamed_Click"/>
            
     <div class="container-fluid" >
         <div class="row">

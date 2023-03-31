@@ -38,7 +38,7 @@ namespace Gestão_de_Protocolos.DocumentosPadroes
                 while (reader1.Read())
                 {
 
-                    nome1.Text = nome1.Text + " " + reader1.GetString("nome_Func");
+                    nome1.Text =  "" + " " + reader1.GetString("nome_Func");
                     Label1.Text = reader1.GetString("nome_Func");
                     cargo.Text = reader1.GetString("cargo");
                     setor.Text = reader1.GetString("nome_setor");
@@ -63,6 +63,7 @@ namespace Gestão_de_Protocolos.DocumentosPadroes
                 string pasta = Server.MapPath("~/DocumentosPadroes/Thumbs/" + nome_setor);
                 string[] arquivos = Directory.GetFiles(pasta);
 
+                docpadro.InnerHtml = "";
                 for (int i = 0; i < arquivos.Length; i++)
                 {
                     string nomeArquivo = Path.GetFileName(arquivos[i]);

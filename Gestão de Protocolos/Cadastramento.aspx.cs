@@ -13,5 +13,10 @@ namespace Gestão_de_Protocolos
         {
 
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/TelaInicial/TelaInicial.aspx");
+        }
     }
 }

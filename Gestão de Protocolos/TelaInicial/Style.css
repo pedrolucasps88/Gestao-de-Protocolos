@@ -19,42 +19,163 @@
     position: absolute;
 }
 
-@keyframes subir {
-    from {
-        margin-top:-15%
-    }
-    to
-    {
-        margin-top:-10%
-    }
-
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
 }
 
-@keyframes icon {
-    from {
-        margin-top: 0%
-    }
-
-    to {
-        margin-top: 5%
-    }
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes icon2 {
-    from {
-        margin-top: -20%
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-image: linear-gradient(to right, #072551, #193267, #2b3f7e, #3d4c95, #5159ac);
+    color: white;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #067d10;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+
+.btn2:link,
+.btn2:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn2:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn2-white {
+    background-color: #0f6916;
+    color: white;
+}
+
+.btn2::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    color:white;
+}
+
+.btn2-whites::after {
+    background-color: white;
+    color: white;
+}
+
+.btn2:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn2-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
 
-    to {
-        margin-top: -13%
-    }
-}
-@keyframes icon3 {
-    from {
-        margin-top: -22%
+    @keyframes subir {
+        from {
+            margin-top: -15%
+        }
+
+        to {
+            margin-top: -10%
+        }
     }
 
-    to {
-        margin-top: -14%
+    @keyframes icon {
+        from {
+            margin-top: 0%
+        }
+
+        to {
+            margin-top: 5%
+        }
     }
-}
+
+    @keyframes icon2 {
+        from {
+            margin-top: 0%
+        }
+
+        to {
+            margin-top: 8%
+        }
+    }
+
+    @keyframes icon3 {
+        from {
+            margin-top: 0%
+        }
+
+        to {
+            margin-top: 7%
+        }
+    }

@@ -48,8 +48,9 @@ namespace Gestão_de_Protocolos.TelaEnvio
                 //Conecta com o banco de dados e realiza a consulta.
                 MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
                 MySqlCommand command = new MySqlCommand("SELECT f.nome_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
-               
+                command.Parameters.Add(new MySqlParameter("selectedValue", selectedValue));
                 conexão.Open();
+                
                 MySqlDataReader reader = command.ExecuteReader();
 
                 //Limpa o dropdown list antes de preencher.
