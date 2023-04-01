@@ -101,7 +101,7 @@
                 </ul>
                    <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../Suporte.aspx">
                             <i class="fa-solid fa-phone" style="color: gainsboro;"></i>
                             SUPORTE
                         </a>

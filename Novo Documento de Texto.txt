@@ -1,1 +1,0 @@
-https://docs.lacunasoftware.com/pt-br/articles/pki-guide/test-certs.html

@@ -1,8 +1,8 @@
 ﻿
 
 .arqui {
-  
-    animation:subir 4s infinite linear alternate;
+    position: absolute;
+    animation: subir 4s infinite linear alternate;
 }
 
 .subi {
@@ -159,11 +159,11 @@
 
     @keyframes subir {
         from {
-            margin-top: -15%
+            margin-top: -20%
         }
 
         to {
-            margin-top: -10%
+            margin-top: -15%
         }
     }
 

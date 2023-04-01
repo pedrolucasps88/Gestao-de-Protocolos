@@ -205,17 +205,13 @@
     <Content Include="arquivos.jpg" />
     <Content Include="arquivotela.jpg" />
     <Content Include="Cadastramento.aspx" />
-    <Content Include="Cadastro\Cadastro.aspx" />
     <Content Include="Caixa de Entrada\CaixaDeEntrada.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="desempenho.jpg" />
-    <Content Include="Divperf.css" />
     <Content Include="do-utilizador.png" />
     <Content Include="documentos ima.png" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
@@ -244,7 +240,6 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Implementação.jpg" />
     <Content Include="Login\Login.aspx" />
-    <Content Include="Perfil.aspx" />
     <Content Include="perfil.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -275,6 +270,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Suporte.aspx" />
     <Content Include="TelaAdmin\Inserir.aspx" />
     <Content Include="TelaAdmin\NovoDoc.aspx" />
     <Content Include="TelaAdmin\TelaDeAdmin.aspx" />
@@ -292,11 +288,6 @@
     <Content Include="TelaInicial\seta.png" />
     <Content Include="TelaInicial\Style.css" />
     <Content Include="TelaInicial\TelaInicial.aspx" />
-    <Content Include="TelaPrincipal\TelaPrincipal.aspx" />
-    <Content Include="Teste.aspx" />
-    <Content Include="test\403881.png" />
-    <Content Include="test\tEST.aspx" />
-    <Content Include="test\transferir.png" />
     <Content Include="THome\Home.aspx" />
     <Content Include="Updates.txt" />
     <Content Include="ViewSwitcher.ascx" />
@@ -321,13 +312,6 @@
     <Compile Include="Cadastramento.aspx.designer.cs">
       <DependentUpon>Cadastramento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro\Cadastro.aspx.cs">
-      <DependentUpon>Cadastro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cadastro\Cadastro.aspx.designer.cs">
-      <DependentUpon>Cadastro.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Caixa de Entrada\CaixaDeEntrada.aspx.cs">
       <DependentUpon>CaixaDeEntrada.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -339,20 +323,6 @@
     <Compile Include="Classes\Funcionarios.cs" />
     <Compile Include="Classes\Mensagem.cs" />
     <Compile Include="Classes\Setor.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DocumentosPadroes\DocumentosPadroes.aspx.cs">
       <DependentUpon>DocumentosPadroes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -370,13 +340,6 @@
     <Compile Include="Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Perfil.aspx.cs">
-      <DependentUpon>Perfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Perfil.aspx.designer.cs">
-      <DependentUpon>Perfil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -391,6 +354,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Suporte.aspx.cs">
+      <DependentUpon>Suporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suporte.aspx.designer.cs">
+      <DependentUpon>Suporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="TelaAdmin\Inserir.aspx.cs">
       <DependentUpon>Inserir.aspx</DependentUpon>
@@ -441,27 +411,6 @@
     <Compile Include="TelaInicial\TelaInicial.aspx.designer.cs">
       <DependentUpon>TelaInicial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TelaPrincipal\TelaPrincipal.aspx.cs">
-      <DependentUpon>TelaPrincipal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TelaPrincipal\TelaPrincipal.aspx.designer.cs">
-      <DependentUpon>TelaPrincipal.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Teste.aspx.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Teste.aspx.designer.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="test\tEST.aspx.cs">
-      <DependentUpon>tEST.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="test\tEST.aspx.designer.cs">
-      <DependentUpon>tEST.aspx</DependentUpon>
-    </Compile>
     <Compile Include="THome\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -484,7 +433,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="test\DOCUMENTO_TESTE.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

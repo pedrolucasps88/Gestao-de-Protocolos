@@ -1,0 +1,21 @@
+INSERT INTO `setor`(`nome_setor`) VALUES ('Diretoria');
+INSERT INTO `setor`(`nome_setor`) VALUES ('RH');
+INSERT INTO `setor`(`nome_setor`) VALUES ('Secretaria');
+INSERT INTO `setor`(`nome_setor`) VALUES ('Docentes');
+INSERT INTO `setor`(`nome_setor`) VALUES ('Reitoria');
+
+
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Presidente','Pedro Lucas','12345','1');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Diretor Executivo','Jaqueline kbinsk','54321','1');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Gerente','Fabiana tamiriana','54321','1');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Diretor','João santos','direrh','2');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Coordenador','mateus almeida','coord','2');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Estagiario','mario michael','estag','2');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Analista','joana fagundes','analis','3');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Gerente','Sabrina ferreira','ferre','3');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Secretario','gilberto fagundes','secre','3');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Professor Matematica','wilson santos','mat','4');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Professora Ciencias','ana mires','cien','4');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Professora Economia','Gislaine roberta','eco','4');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Reitor','jorge maruli','reitor','5');
+INSERT INTO `funcionarios`( `cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES ('Reitora','larissa dos santos','juju','5');

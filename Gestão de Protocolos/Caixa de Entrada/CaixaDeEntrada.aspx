@@ -97,7 +97,7 @@
                 </ul>
                    <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../Suporte.aspx">
                             <i class="fa-solid fa-phone" style="color: gainsboro;"></i>
                             SUPORTE
                         </a>
@@ -120,8 +120,7 @@
                 <hr />
                 <div class="row">
                     <div class="col-sm-6">
-                        <p>Matrícula:</p>
-                    </div>
+                        <p>Matrícula:</p>                    </div>
                     <div class="col-sm-6">
                         <asp:Label Text="matricula" ID="matricula" runat="server" class="text-muted text-center"></asp:Label>
                     </div>

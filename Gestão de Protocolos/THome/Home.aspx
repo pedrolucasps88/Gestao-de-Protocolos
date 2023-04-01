@@ -112,7 +112,7 @@
             </ul>
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="../Suporte.aspx">
                         <i class="fa-solid fa-phone" style="color: gainsboro;"></i>
                         SUPORTE
                     </a>
@@ -175,7 +175,7 @@
                 <div class="col-md-4">
                     <h2 style="color: aliceblue;">Seguro e confiável</h2>
                     <p style="color: aliceblue;">Levamos sua privacidade e segurança a sério, usando as mais recentes medidas de criptografia e segurança para garantir que seus arquivos estejam seguros e protegidos.</p>
-                    <asp:LinkButton Text="Sobre nós e o site <i class='fa-solid fa-phone' style='color: #f2f2f2;'></i>" runat="server" class="btn btn-dark" href="#" Style="margin-left: 20%; margin-top: 4%" />
+                    <asp:LinkButton Text="Sobre nós e o site <i class='fa-solid fa-phone' style='color: #f2f2f2;'></i>" runat="server" class="btn btn-dark" href="../Suporte.aspx" Style="margin-left: 20%; margin-top: 4%" />
                 </div>
             </div>
 
