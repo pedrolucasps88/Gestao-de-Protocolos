@@ -200,6 +200,11 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Anexos\carimbo.png" />
+    <Content Include="Anexos\carimbo1.png" />
+    <Content Include="Anexos\carimbo10.png" />
+    <Content Include="Anexos\carimbo14.png" />
+    <Content Include="Anexos\carimbo4.png" />
+    <Content Include="Anexos\carimbo8.png" />
     <Content Include="Anexos\transferir.png" />
     <Content Include="arquivo.png" />
     <Content Include="arquivos.jpg" />
@@ -215,10 +220,12 @@
     <Content Include="do-utilizador.png" />
     <Content Include="documentos ima.png" />
     <Content Include="DocumentosPadroes\DocumentosPadroes.aspx" />
-    <Content Include="DocumentosPadroes\Thumbs\Manutenção\DOCUMENTO_TESTE.png" />
-    <Content Include="DocumentosPadroes\Thumbs\Qualidade\DOCUMENTO_TESTE.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Diretoria\Oficio.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Diretoria\presidencia.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Docentes\Formulario.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Reitoria\comunicado.png" />
+    <Content Include="DocumentosPadroes\Thumbs\Reitoria\comunicado2.png" />
     <Content Include="DocumentosPadroes\Thumbs\RH\DOCUMENTO_TESTE.png" />
-    <Content Include="DocumentosPadroes\Thumbs\Secretaria\DOCUMENTO_TESTE.png" />
     <Content Include="estudodiri.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -231,12 +238,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Anexos\DOCUMENTO_TESTE.pdf" />
-    <Content Include="DocumentosPadroes\Documentos\DOCUMENTO_TESTE.pdf" />
-    <Content Include="DocumentosPadroes\Documentos\Manutenção\DOCUMENTO_TESTE.pdf" />
-    <Content Include="DocumentosPadroes\Documentos\Qualidade\DOCUMENTO_TESTE.pdf" />
     <Content Include="DocumentosPadroes\Documentos\RH\DOCUMENTO_TESTE.pdf" />
-    <Content Include="DocumentosPadroes\Documentos\Secretaria\DOCUMENTO_TESTE.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Diretoria\Oficio.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Diretoria\presidencia.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Reitoria\comunicado.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Reitoria\comunicado2.pdf" />
+    <Content Include="DocumentosPadroes\Documentos\Docentes\Formulario.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Implementação.jpg" />
     <Content Include="Login\Login.aspx" />
@@ -428,6 +435,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DocumentosPadroes\Documentos\Secretaria\" />
+    <Folder Include="DocumentosPadroes\Thumbs\Secretaria\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

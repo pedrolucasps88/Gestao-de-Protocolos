@@ -17,7 +17,7 @@
             <h1 style="margin-left:25%;margin-top:5%;color:white">PAGINA DE ADIMINISTRADOR</h1>
             <h4 style="margin-left:32%;margin-top:5%;color:white">SETORES/FUNCIONARIOS</h4>
             <asp:Button ID="Insert" Text="Cadastrar Funcionario" class="btn btn-success" runat="server" style="margin-top:3%;margin-left:55%;" OnClick="Insert_Click" />
-            <div style="width:800px;height:400px;margin-top:1%;margin-left:20%;color:white">
+            <div style="width:800px;height:900px;margin-top:1%;margin-left:20%;color:white">
             <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="100%" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound"   >
     <Columns>
         <asp:BoundField DataField="matricula" HeaderText="Matricula" />
@@ -30,8 +30,8 @@
     </Columns>
                 </asp:GridView>
                 </div>
-            <h4 style="margin-left:30%;margin-top:0%;color:white">ENVIOS/RECEBIMENTO/ANEXOS</h4>
-                <div style="width:800px;height:500px;margin-top:1%;margin-left:20%;color:white">
+            <h4 style="margin-left:30%;margin-top:5%;color:white">ENVIOS/RECEBIMENTO/ANEXOS</h4>
+                <div style="width:800px;height:500px;margin-top:5%;margin-left:20%;color:white">
 <asp:GridView ID="GridView2" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="100%" OnRowCommand="GridView2_RowCommand" OnRowDataBound="GridView2_RowDataBound"  >
     <Columns>
         <asp:BoundField DataField="id" HeaderText="id" />
@@ -53,8 +53,8 @@
 </asp:GridView>
 
                 </div>
-              <h4 style="margin-left:30%;margin-top:0%;color:white">SETORES E DOCUMENTOS PADRÕES</h4>
-                <div style="width:800px;height:400px;margin-top:1%;margin-left:20%;color:white">
+              <h4 style="margin-left:30%;margin-top:5%;color:white">SETORES E DOCUMENTOS PADRÕES</h4>
+                <div style="width:800px;height:400px;margin-top:5%;margin-left:20%;color:white">
                     <asp:GridView ID="GridView3" AutoGenerateColumns="false" runat="server"  Width="100%" Height="100%" OnRowCommand="GridView3_RowCommand" OnRowDataBound="GridView3_RowDataBound" >
                    <Columns>
                         <asp:BoundField DataField="id" HeaderText="id" />

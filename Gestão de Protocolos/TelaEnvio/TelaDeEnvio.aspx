@@ -149,10 +149,11 @@
             <div class="form-group">
                 <label for="to" style="color:aliceblue">Para:</label>
                 <asp:DropDownList runat="server" ID="setores" AutoPostBack="true" OnSelectedIndexChanged="setores_SelectedIndexChanged" >
-                    <asp:ListItem Text="RH" Value="1" />
-                    <asp:ListItem Text="Manutenção" Value="2" />
+                    <asp:ListItem Text="Diretoria" Value="1" />
+                    <asp:ListItem Text="RH" Value="2" />
                     <asp:ListItem Text="Secretaria" Value="3" />
-                    <asp:ListItem Text="Qualidade" Value="4" />
+                    <asp:ListItem Text="Docentes" Value="4" />
+                    <asp:ListItem Text="Reitoria" Value="5" />
                 </asp:DropDownList>
             </div>
              <div class="form-group">

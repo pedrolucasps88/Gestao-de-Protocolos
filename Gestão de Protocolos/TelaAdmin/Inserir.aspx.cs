@@ -23,7 +23,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
 
         protected void inserir_Click(object sender, EventArgs e)
         {
-            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             connection.Open();
             var comando = new MySqlCommand($@"INSERT INTO `funcionarios`(`cargo`, `nome_Func`, `senha`, `id_Setor`) VALUES(@cargo, @nome_Func, @senha, @id_Setor)", connection);
             comando.Parameters.Add(new MySqlParameter("cargo", Cargo.Text));

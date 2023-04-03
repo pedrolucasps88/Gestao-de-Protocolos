@@ -17,7 +17,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
         protected void Page_Load(object sender, EventArgs e)
         {
         
-            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+            connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             connection.Open();
             var comando = new MySqlCommand($@"SELECT f.Matricula_Func,f.nome_Func,s.nome_setor, f.cargo, f.senha FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE 1;", connection);
             List<Funcionarios> funci = new List<Funcionarios>();
@@ -41,7 +41,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             GridView1.DataSource = funci;
             GridView1.DataBind();
             connection.Close();
-            connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+            connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             
             var comando2 = new MySqlCommand($@"SELECT c.id,c.matricula_remetente,f.nome_Func nome_r,f.cargo cargo_r,s.nome_setor setor_r,c.matricula_destinatario,d.nome_Func nome_d,d.cargo cargo_d,z.nome_setor setor_d,c.assunto,c.mensagem,c.anexo,c.hora 
 FROM chat c
@@ -78,7 +78,7 @@ WHERE 1", connection2);
             GridView2.DataSource = mensag;
             GridView2.DataBind();
             connection2.Close();
-            connection3 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+            connection3 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             connection3.Open();
             var comando3 = new MySqlCommand($@"SELECT * FROM `setor` WHERE 1;", connection3);
             List<Setor> setores = new List<Setor>();
@@ -104,7 +104,7 @@ WHERE 1", connection2);
             var funcio= (List<Funcionarios>)Session["funci"];
             if (e.CommandName == "Excluir")
             {
-                connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+                connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
                 connection.Open();
                 var comando = new MySqlCommand($@"DELETE FROM `funcionarios` WHERE `Matricula_Func`=" + funcio[index].matricula, connection);
                 comando.ExecuteNonQuery();
@@ -129,7 +129,7 @@ WHERE 1", connection2);
             var mensag = (List<chatCompleto>)Session["mensagens"];
             if (e.CommandName == "Excluir")
             {
-                connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=gestaodeprotocolos");
+                connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
                 connection.Open();
                 var comando = new MySqlCommand($@"DELETE FROM `chat` WHERE `id`=" + mensag[index].id, connection);
                 comando.ExecuteNonQuery();

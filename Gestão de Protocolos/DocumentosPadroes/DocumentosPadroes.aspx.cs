@@ -70,7 +70,7 @@ namespace Gestão_de_Protocolos.DocumentosPadroes
                     if (Path.GetExtension(nomeArquivo) == ".png")
                     {
 
-                        docpadro.InnerHtml += "<br/> <a href='/DocumentosPadroes/Documentos/" + nome_setor + "/" + nomeArquivo.Replace(".png", ".pdf") + "' target='_blank' ><img src='/DocumentosPadroes/Thumbs/" + nomeArquivo + "'style='width: 200px; height: 250px;'/> </a><br/> ";
+                        docpadro.InnerHtml += "<br/> <a href='/DocumentosPadroes/Documentos/" + nome_setor + "/" + nomeArquivo.Replace(".png", ".pdf") + "' target='_blank' ><img src='/DocumentosPadroes/Thumbs/"+nome_setor+"/" + nomeArquivo + "'style='width: 200px; height: 250px;'/> </a><br/> ";
                     }
                 }
 

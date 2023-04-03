@@ -25,48 +25,51 @@ namespace Gestão_de_Protocolos.TelaEnvio
             {
 
             }
-
-            int num_matricu;
-            connection = new MySqlConnection(SiteMaster.ConnectionString);
-            connection.Open();
-            MySqlCommand commandinho = new MySqlCommand("SELECT f.Matricula_Func,f.cargo, f.nome_Func,s.nome_setor FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE `Matricula_Func`=" + Session["usuariologado"].ToString(), connection);
-            using (var reader1 = commandinho.ExecuteReader())
+            if (!IsPostBack)
             {
-                while (reader1.Read())
+                int num_matricu;
+                connection = new MySqlConnection(SiteMaster.ConnectionString);
+                connection.Open();
+                MySqlCommand commandinho = new MySqlCommand("SELECT f.Matricula_Func,f.cargo, f.nome_Func,s.nome_setor FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE `Matricula_Func`=" + Session["usuariologado"].ToString(), connection);
+                using (var reader1 = commandinho.ExecuteReader())
                 {
+                    while (reader1.Read())
+                    {
 
-                    nome.Text = " " + reader1.GetString("nome_Func");
-                    Label1.Text = reader1.GetString("nome_Func");
-                    cargo.Text = reader1.GetString("cargo");
-                    setor.Text = reader1.GetString("nome_setor");
-                    num_matricu = reader1.GetInt32("Matricula_Func");
-                    matricula.Text = Convert.ToString(num_matricu);
+                        nome.Text = " " + reader1.GetString("nome_Func");
+                        Label1.Text = reader1.GetString("nome_Func");
+                        cargo.Text = reader1.GetString("cargo");
+                        setor.Text = reader1.GetString("nome_setor");
+                        num_matricu = reader1.GetInt32("Matricula_Func");
+                        matricula.Text = Convert.ToString(num_matricu);
+                    }
+
+                    string selectedValue = setores.SelectedValue;
+
+                    //Conecta com o banco de dados e realiza a consulta.
+                    MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=unibr");
+                    MySqlCommand command = new MySqlCommand("SELECT f.nome_Func,f.Matricula_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
+                    command.Parameters.Add(new MySqlParameter("selectedValue", selectedValue));
+                    conexão.Open();
+
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    //Limpa o dropdown list antes de preencher.
+                    funcionarios.Items.Clear();
+
+                    //Preenche o dropdown list com os resultados da consulta.
+                    while (reader.Read())
+                    {
+                        ListItem item = new ListItem();
+                        item.Text = reader["nome_Func"].ToString();
+                        item.Value = reader["Matricula_Func"].ToString();
+                        funcionarios.Items.Add(item);
+                    }
+
+                    conexão.Close();
                 }
-
-                string selectedValue = setores.SelectedValue;
-
-                //Conecta com o banco de dados e realiza a consulta.
-                MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
-                MySqlCommand command = new MySqlCommand("SELECT f.nome_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
-                command.Parameters.Add(new MySqlParameter("selectedValue", selectedValue));
-                conexão.Open();
-                
-                MySqlDataReader reader = command.ExecuteReader();
-
-                //Limpa o dropdown list antes de preencher.
-                funcionarios.Items.Clear();
-
-                //Preenche o dropdown list com os resultados da consulta.
-                while (reader.Read())
-                {
-                    ListItem item = new ListItem();
-                    item.Text = reader["nome_Func"].ToString();
-                    item.Value = reader["nome_Func"].ToString();
-                    funcionarios.Items.Add(item);
-                }
-
-                conexão.Close();
             }
+            
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
@@ -85,8 +88,10 @@ namespace Gestão_de_Protocolos.TelaEnvio
 
             string mensagem = mensagema.Text;
             string assunto = assuntos.Text;
+            int func= Convert.ToInt32(funcionarios.SelectedItem.Value);
+
             int matricularemetente = Convert.ToInt32(Session["usuariologado"].ToString()); ;
-            int matriculadestinatario = Convert.ToInt32(funcionarios.SelectedValue);
+            int matriculadestinatario = func;
 
 
             connection.Open();
@@ -100,7 +105,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             comando.ExecuteNonQuery();
             connection.Close();
 
-           
+            SiteMaster.ExibirAlert(this,"Mensagem e arquivo enviado!","../THome/Home.aspx");
 
         }
 
@@ -109,8 +114,8 @@ namespace Gestão_de_Protocolos.TelaEnvio
             string selectedValue = setores.SelectedValue;
 
             //Conecta com o banco de dados e realiza a consulta.
-            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos");
-            MySqlCommand command = new MySqlCommand("SELECT f.nome_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
+            MySqlConnection conexão = new MySqlConnection("Server=127.0.0.1;User ID=root;Password=;Database=unibr");
+            MySqlCommand command = new MySqlCommand("SELECT f.nome_Func,f.Matricula_Func FROM funcionarios f INNER JOIN setor s ON s.id = f.id_Setor WHERE `id`= @selectedValue", conexão);
             command.Parameters.AddWithValue("@selectedValue", selectedValue);
 
             conexão.Open();
@@ -124,7 +129,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             {
                 ListItem item = new ListItem();
                 item.Text = reader["nome_Func"].ToString();
-                item.Value = reader["nome_Func"].ToString();
+                item.Value = reader["Matricula_Func"].ToString();
                 funcionarios.Items.Add(item);
             }
 

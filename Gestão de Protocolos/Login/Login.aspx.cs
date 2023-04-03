@@ -23,7 +23,7 @@ namespace Gestão_de_Protocolos.Login
         {
 
             
-            string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database=gestaodeprotocolos";
+            string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database=unibr";
             string id_funcionario = txtid_funcionario.Text;
              string senha_funcionario = txtpassword.Text;
            // Log.Logger = new LoggerConfiguration().WriteTo.File("C:\\Users\\Desktop\\Nova pasta (6)\\Gestao-de-Protocolos\\myapp.txt", restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Hour).CreateLogger();
