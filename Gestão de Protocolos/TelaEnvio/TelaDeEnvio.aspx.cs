@@ -75,7 +75,6 @@ namespace Gestão_de_Protocolos.TelaEnvio
         protected void Unnamed_Click(object sender, EventArgs e)
         {
           
-            DateTime horaagora = DateTime.Today;
             connection = new MySqlConnection(SiteMaster.ConnectionString);
             string arquivo = "";
             if (arqui.HasFile)
@@ -101,7 +100,7 @@ namespace Gestão_de_Protocolos.TelaEnvio
             comando.Parameters.Add(new MySqlParameter("assunto", assunto));
             comando.Parameters.Add(new MySqlParameter("mensagem", mensagem));
             comando.Parameters.Add(new MySqlParameter("anexo", arquivo));
-            comando.Parameters.Add(new MySqlParameter("hora", horaagora));
+            comando.Parameters.Add(new MySqlParameter("hora", DateTime.Now));
             comando.ExecuteNonQuery();
             connection.Close();
 

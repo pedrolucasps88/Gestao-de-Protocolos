@@ -20,7 +20,7 @@
             position: absolute;
             margin-left: -15%;
             margin-top: 0%;
-            width: 300px;
+            width: 360px;
             height: 200px;
             background-color: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -127,7 +127,7 @@
                     </div>
                      <div class="profile-card">
                  <asp:image imageurl="~/do-utilizador.png" runat="server" style="width:80px;height:80px;position:absolute;margin-top:3%;" />
-                <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique"></asp:Label><br />
+                <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique;max-width: 6ch;overflow: hidden;text-overflow: clip;white-space: nowrap;"></asp:Label><br />
                 <asp:Label Text="Cargo" ID="cargo" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
                 <asp:Label Text="setor" ID="setor" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
 
@@ -158,8 +158,8 @@
 
             <img src="../documentos ima.png" alt="" style="width: 1100px; height: 400px; opacity: 0.8; z-index: 1; margin-top: 1%;" />
             <h1 style="position: absolute; margin-top: -25%; margin-left: 8%; color: #0f5adb;">Bem-Vindo ao site de Gestão de Protocolos!</h1>
-            <p class="lead" style="position: absolute; margin-top: 1%; margin-left: 15%; color: aliceblue; font-family: fantasy;">Melhor envio e recebimentos de arquivos com segurança garantida</p>
-            <p style="position: absolute; margin-top: 4%; margin-left: 27%;"><a class="btn btn-dark" href="#" role="button" style="z-index: 2;"><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i>Rapido Tutorial</a></p>
+            <p class="lead" style="position: absolute; margin-top: 1%; margin-left: 20%; color: aliceblue; font-family: fantasy;">Melhor envio e recebimentos de arquivos com segurança garantida</p>
+            <p style="position: absolute; margin-top: 4%; margin-left: 27%;"><a class="btn btn-dark" href="#" role="button" style="z-index: 2;margin-left:55%"><i class="fa-solid fa-circle-info" style="color: #8dace2;"></i>Rapido Tutorial</a></p>
 
             <div class="row" style="margin-top: 10%;">
                 <div class="col-md-4">

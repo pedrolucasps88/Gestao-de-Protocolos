@@ -13,7 +13,7 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-image: linear-gradient(to top, #2b3a6b, #303d70, #344075, #39427a, #3e457f, #424a84, #464f8a, #4a548f, #4e5c96, #52649e, #566ca5, #5b74ac);">
     <form id="form1" runat="server">
         <asp:Button Text="<< Voltar" runat="server" OnClick="Unnamed_Click" class="btn btn-warning" />  
    <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
@@ -40,6 +40,15 @@
    < VER DOCUMENTOS >
   </button>
 </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </form>
 </body>
 </html>

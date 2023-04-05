@@ -113,7 +113,7 @@
                     </div>
                      <div class="profile-card">
                          <asp:image imageurl="~/do-utilizador.png" runat="server" style="width:80px;height:80px;position:absolute;margin-top:3%;" />
-                <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique"></asp:Label><br />
+                <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique;max-width: 6ch;overflow: hidden;text-overflow: clip;white-space: nowrap;"></asp:Label><br />
                 <asp:Label Text="Cargo" ID="cargo" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
                 <asp:Label Text="setor" ID="setor" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
 
@@ -148,7 +148,7 @@
                 <asp:Button Text="ENVIADOS" ID="ENVIADOS" runat="server" class="btn btn-outline-info" OnClick="ENVIADOS_Click" style="width:100px;height:50px" />
                 
             </div>
-            <div class="col-sm-9">
+            <%--<div class="col-sm-9">--%>
                 <!-- Lista de mensagens -->
  <asp:GridView ID="GridView1" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" style="margin-left:20%;margin-top:10%;position:absolute" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" RowStyle-BackColor="#FFFFFF" AlternatingRowStyle-BackColor="#F2F2F2" HeaderStyle-BackColor="White"  >
     <Columns>
@@ -175,15 +175,15 @@
      
 
 
-            </div>
-                 <div class="col-sm-9">
+            <%--</div>--%>
+                 <%--<div class="col-sm-9">--%>
                 <!-- Lista de mensagens -->
  <asp:GridView ID="GridView2" runat="server" DataSourceID="" AutoGenerateColumns="false" Width="100%" Height="200px" style="margin-left:20%;position:absolute;margin-top:8%" OnRowCommand="GridView2_RowCommand" OnRowDataBound="GridView2_RowDataBound" RowStyle-BackColor="#FFFFFF" AlternatingRowStyle-BackColor="#F2F2F2" HeaderStyle-BackColor="White"  >
     <Columns>
         <asp:BoundField DataField="destinatario" HeaderText="Destinatario" ItemStyle-HorizontalAlign="Center" />
-        <asp:BoundField DataField="nomedestinatario" HeaderText="Nome do Demetente" ItemStyle-HorizontalAlign="Center"/>
+        <asp:BoundField DataField="nomedestinatario" HeaderText="Nome do Destinatario" ItemStyle-HorizontalAlign="Center"/>
         <asp:BoundField DataField="cargodesti" HeaderText="cargo" />
-        <asp:BoundField DataField="setorreme" HeaderText="setor do Demetente"  ItemStyle-HorizontalAlign="Center"/>
+        <asp:BoundField DataField="setordesti" HeaderText="setor do Remetente"  ItemStyle-HorizontalAlign="Center"/>
         <asp:BoundField DataField="assunto" HeaderText="assunto" ItemStyle-HorizontalAlign="Center" />
         <asp:BoundField DataField="mensagem" HeaderText="mensagem" ItemStyle-HorizontalAlign="Center" />
         <asp:BoundField DataField="anexo" HeaderText="Anexo" ItemStyle-HorizontalAlign="Center" />
@@ -203,9 +203,10 @@
      
 
 
-            </div>
+<%--            </div>--%>
         </div>
     </div>
+        </div>
         <br />
          <br />
          <br />

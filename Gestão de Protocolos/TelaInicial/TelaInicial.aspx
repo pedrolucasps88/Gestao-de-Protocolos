@@ -299,15 +299,11 @@
                      <h5 style="color:white;margin-top:90%">Estudo dirigido por empresa</h5>
                      <p style="margin-top:10%;color:white">buscando entender a estrutura da empresa e buscando adequar da melhor forma o software</p>
                  </div>
-                  <div style="margin-left:5%;margin-top:2%;width:300px;height:400px;position:absolute;border-radius:10px;z-index:1;background-image: radial-gradient(circle, #353639, #292a2d, #1e1e21, #131315, #010104);" >
-                     <h5 style="color:white;margin-top:90%">Estudo dirigido por empresa</h5>
-                     <p style="margin-top:10%;color:white">buscando entender a estrutura da empresa e buscando adequar da melhor forma o software</p>
-                 </div>
-                  <div style="margin-left:36.7%;margin-top:2%;width:300px;height:400px;position:absolute;border-radius:10px;z-index:1;background-image: radial-gradient(circle, #353639, #292a2d, #1e1e21, #131315, #010104);" >
+                  <div style="margin-left:39.9%;margin-top:2%;width:300px;height:400px;position:absolute;border-radius:10px;z-index:1;background-image: radial-gradient(circle, #353639, #292a2d, #1e1e21, #131315, #010104);" >
                      <h5 style="color:white;margin-top:90%">Implementação rapida</h5>
                      <p style="margin-top:10%;color:white">Implementamos o software na empresa de forma segura,rapida e em etapas para que não aja problemas</p>
                  </div>
-                  <div style="margin-left:68.5%;margin-top:2%;width:300px;height:400px;position:absolute;border-radius:10px;z-index:1;background-image: radial-gradient(circle, #353639, #292a2d, #1e1e21, #131315, #010104);" >
+                  <div style="margin-left:75.2%;margin-top:2%;width:300px;height:400px;position:absolute;border-radius:10px;z-index:1;background-image: radial-gradient(circle, #353639, #292a2d, #1e1e21, #131315, #010104);" >
                      <h5 style="color:white;margin-top:90%">Melhora no desempenho</h5>
                      <p style="margin-top:10%;color:white">software pensado para agilizar e automatizar processos garantindo um serviço mais eficaz</p>
                  </div>

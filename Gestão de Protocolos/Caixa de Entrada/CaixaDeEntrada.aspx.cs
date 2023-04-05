@@ -66,7 +66,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                     while (reader.Read())
                     {
                         Mensagem recebidos = new Mensagem();
-                        recebidos.destinatario = reader.GetInt32("matricula_remetente");
+                        recebidos.remetente = reader.GetInt32("matricula_remetente");
                         recebidos.nomeremetente = reader.GetString("nome_Func");
                         recebidos.cargo = reader.GetString("cargo");
                         recebidos.setorreme = reader.GetString("nome_setor");
