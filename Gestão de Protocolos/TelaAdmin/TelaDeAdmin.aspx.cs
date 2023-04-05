@@ -16,7 +16,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
         private MySqlConnection connection3;
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
             connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             connection.Open();
             var comando = new MySqlCommand($@"SELECT f.Matricula_Func,f.nome_Func,s.nome_setor, f.cargo, f.senha FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE 1;", connection);
@@ -32,7 +32,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
                     recebidos.setor = reader.GetString("nome_setor");
                     recebidos.cargo = reader.GetString("cargo");
                     recebidos.senha = reader.GetString("senha");
-                    
+
                     funci.Add(recebidos);
                 }
             }
@@ -42,7 +42,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             GridView1.DataBind();
             connection.Close();
             connection2 = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
-            
+
             var comando2 = new MySqlCommand($@"SELECT c.id,c.matricula_remetente,f.nome_Func nome_r,f.cargo cargo_r,s.nome_setor setor_r,c.matricula_destinatario,d.nome_Func nome_d,d.cargo cargo_d,z.nome_setor setor_d,c.assunto,c.mensagem,c.anexo,c.hora 
 FROM chat c
 INNER JOIN funcionarios f ON c.matricula_remetente= f.Matricula_Func
@@ -101,7 +101,7 @@ WHERE 1", connection2);
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
-            var funcio= (List<Funcionarios>)Session["funci"];
+            var funcio = (List<Funcionarios>)Session["funci"];
             if (e.CommandName == "Excluir")
             {
                 connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
@@ -109,7 +109,7 @@ WHERE 1", connection2);
                 var comando = new MySqlCommand($@"DELETE FROM `funcionarios` WHERE `Matricula_Func`=" + funcio[index].matricula, connection);
                 comando.ExecuteNonQuery();
                 SiteMaster.ExibirAlert(this, "Cliente excluído com sucesso!", "TelaDeAdmin.aspx");
-                
+
                 connection.Close();
             }
             if (e.CommandName == "Editar")

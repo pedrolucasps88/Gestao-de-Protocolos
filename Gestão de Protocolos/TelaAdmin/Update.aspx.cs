@@ -19,7 +19,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
                 var matricula = Request.QueryString["matricula"].ToString();
                 connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
                 connection.Open();
-                var comando = new MySqlCommand($@"SELECT `cargo`, `nome_Func`, `senha`, `id_Setor` FROM `funcionarios` WHERE `Matricula_Func`= "+ Convert.ToInt32(matricula), connection);
+                var comando = new MySqlCommand($@"SELECT `cargo`, `nome_Func`, `senha`, `id_Setor` FROM `funcionarios` WHERE `Matricula_Func`= " + Convert.ToInt32(matricula), connection);
                 int num_setor;
                 using (var reader = comando.ExecuteReader())
                 {
@@ -33,8 +33,8 @@ namespace Gestão_de_Protocolos.TelaAdmin
                         setores.SelectedValue = Convert.ToString(num_setor);
                     }
                 }
-               
-                      
+
+
             }
         }
 
@@ -43,7 +43,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             var matricula = Request.QueryString["matricula"].ToString();
             connection = new MySqlConnection("Server = 127.0.0.1; User ID = root; Password=;Database=unibr");
             connection.Open();
-            var comando = new MySqlCommand($@"UPDATE `funcionarios` SET `cargo`=@cargo,`nome_Func`=@nome_Func,`senha`=@senha,`id_Setor`=@id_Setor WHERE `Matricula_Func`="+ Convert.ToInt32(matricula), connection);
+            var comando = new MySqlCommand($@"UPDATE `funcionarios` SET `cargo`=@cargo,`nome_Func`=@nome_Func,`senha`=@senha,`id_Setor`=@id_Setor WHERE `Matricula_Func`=" + Convert.ToInt32(matricula), connection);
             comando.Parameters.Add(new MySqlParameter("cargo", Cargo.Text));
             comando.Parameters.Add(new MySqlParameter("nome_Func", nome.Text));
             comando.Parameters.Add(new MySqlParameter("senha", psw.Text));

@@ -18,7 +18,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
 
         protected void setores_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void inserir_Click(object sender, EventArgs e)

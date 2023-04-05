@@ -4,16 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8ca27dcaf9.js" crossorigin="anonymous"></script>
     <title></title>
-     <style>
+    <style>
         .profile-card {
             position: absolute;
             margin-left: -15%;
@@ -25,14 +25,14 @@
             border-radius: 10px;
             display: none;
             padding: 20px;
-            z-index:1000;
+            z-index: 1000;
         }
 
         .nome22:hover + .profile-card {
             display: block;
         }
 
-        .nome22{
+        .nome22 {
             color: white;
         }
 
@@ -69,23 +69,23 @@
         <!------ Include the above in your HEAD tag ---------->
 
         <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark" style="margin-top: 0%">
-           <a class="navbar-brand" href="../THome/Home.aspx" style="margin-top: 0%">GESTÃO DE PROTOCOLOS</a>
+            <a class="navbar-brand" href="../THome/Home.aspx" style="margin-top: 0%">GESTÃO DE PROTOCOLOS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../THome/Home.aspx">
-                       <i class="fa-solid fa-house" style="color: gainsboro;"></i>
+                            <i class="fa-solid fa-house" style="color: gainsboro;"></i>
                             HOME
           <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Caixa de Entrada/CaixaDeEntrada.aspx">
-                       <i class="fa-solid fa-envelope" style="color: gainsboro;"></i>
+                            <i class="fa-solid fa-envelope" style="color: gainsboro;"></i>
                             Caixa de Entrada
                         </a>
                     </li>
@@ -96,83 +96,84 @@
                             Envios de Mensagens
                         </a>
                     </li>
-                   <li class="nav-item">
-                       
+                    <li class="nav-item">
+
                         <a class="nav-link" href="../DocumentosPadroes/DocumentosPadroes.aspx">
                             <i class="fa-solid fa-file" style="color: gainsboro;"></i>
                             Documentação Padrão
                         </a>
                     </li>
                 </ul>
-                   <ul class="navbar-nav ">
+                <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link" href="../Suporte.aspx">
                             <i class="fa-solid fa-phone" style="color: gainsboro;"></i>
                             SUPORTE
                         </a>
                     </li>
-                     <li class="nav-item" style="margin-top: 3%">
-                    <div class="nome22">
-                        <i class='fa-solid fa-id-card' style='color: gainsboro;'></i><asp:Label ID="nome1" Class="" Style="color: white;" Text="" runat="server" />
-                        <%--     <a class="nav-link" href="../Perfil.aspx">
+                    <li class="nav-item" style="margin-top: 3%">
+                        <div class="nome22">
+                            <i class='fa-solid fa-id-card' style='color: gainsboro;'></i>
+                            <asp:Label ID="nome1" Class="" Style="color: white;" Text="" runat="server" />
+                            <%--     <a class="nav-link" href="../Perfil.aspx">
                        <i class="fa-solid fa-id-card" style="color: gainsboro;"></i>
                             PERFIL
                         </a>--%>
-                    </div>
-                     <div class="profile-card">
-                         <asp:image imageurl="~/do-utilizador.png" runat="server" style="width:80px;height:80px;position:absolute;margin-top:3%;" />
-                <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique; max-width: 6ch;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"></asp:Label><br />
-                <asp:Label Text="Cargo" ID="cargo" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
-                <asp:Label Text="setor" ID="Label3" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
+                        </div>
+                        <div class="profile-card">
+                            <asp:Image ImageUrl="~/do-utilizador.png" runat="server" Style="width: 80px; height: 80px; position: absolute; margin-top: 3%;" />
+                            <asp:Label ID="Label1" runat="server" class="text-center" Text="nome" Style="font-size: 30px; text-align: center; margin-left: 35%; font-family: Abril Fatface, serif; font-style: oblique; max-width: 6ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"></asp:Label><br />
+                            <asp:Label Text="Cargo" ID="cargo" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
+                            <asp:Label Text="setor" ID="Label3" runat="server" class="text-muted text-center" Style="font-size: 20px; text-align: center; margin-left: 40%;"></asp:Label><br />
 
-                <hr />
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>Matrícula:</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <asp:Label Text="matricula" ID="matricula" runat="server" class="text-muted text-center"></asp:Label>
-                    </div>
-                </div>
-            </div>
-                </li>
-                       <li class="nav-item">
+                            <hr />
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Matrícula:</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <asp:Label Text="matricula" ID="matricula" runat="server" class="text-muted text-center"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="../Login/Login.aspx">
                             <i class="fa-solid fa-person-running" style="color: #eb0017;"></i>
                             SAIR
                         </a>
                     </li>
                 </ul>
-              
+
             </div>
         </nav>
-    
-    
-   <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title">Documentos</h1>
-    <asp:button runat="server" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" ></asp:button>
-  </div>
-  <div class="offcanvas-body" runat="server" >
-      <div runat="server" id="docpadro">
 
-      </div>
-      
-  
-       
-  </div>
-</div>
 
-<div class="container-fluid mt-3">
-  <h1 style="margin-left:35%;margin-top:3%;color:aliceblue ">Documentos Padrões</h1>
-  <p style="margin-left:35%;margin-top:5%;color:aliceblue ;"> Bem Vindo,</p><asp:Label ID="nome" Text="fulano"  runat="server" style="margin-left:40%;font-size:26px;color:aliceblue ;"></asp:Label>
-  <p style="margin-left:35%;margin-top:5%;color:aliceblue ;">Documentos Padrões do setor:</p>
-    <asp:Label ID="setor" Text="setor" runat="server" style="margin-left:40%;font-size:26px;color:aliceblue ;" />
-    <br/>
-  <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-left:40%;margin-top:2%">
-   < VER DOCUMENTOS >
-  </button>
-</div>
+        <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Documentos</h1>
+                <asp:Button runat="server" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></asp:Button>
+            </div>
+            <div class="offcanvas-body" runat="server">
+                <div runat="server" id="docpadro">
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <h1 style="margin-left: 35%; margin-top: 3%; color: aliceblue">Documentos Padrões</h1>
+            <p style="margin-left: 35%; margin-top: 5%; color: aliceblue;">Bem Vindo,</p>
+            <asp:Label ID="nome" Text="fulano" runat="server" Style="margin-left: 40%; font-size: 26px; color: aliceblue;"></asp:Label>
+            <p style="margin-left: 35%; margin-top: 5%; color: aliceblue;">Documentos Padrões do setor:</p>
+            <asp:Label ID="setor" Text="setor" runat="server" Style="margin-left: 40%; font-size: 26px; color: aliceblue;" />
+            <br />
+            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-left: 40%; margin-top: 2%">
+                < VER DOCUMENTOS >
+            </button>
+        </div>
         <br />
         <br />
         <br />
@@ -185,7 +186,7 @@
         <br />
         <br />
         <br />
-        
+
     </form>
 </body>
 </html>

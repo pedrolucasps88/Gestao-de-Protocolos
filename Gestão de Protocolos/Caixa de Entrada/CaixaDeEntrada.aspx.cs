@@ -31,8 +31,8 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
             {
                 Session["usuariologado"].ToString();
             }
-            
-            
+
+
             connection3 = new MySqlConnection(SiteMaster.ConnectionString);
             connection3.Open();
             MySqlCommand commandinho = new MySqlCommand("SELECT f.Matricula_Func,f.cargo, f.nome_Func,s.nome_setor FROM funcionarios f INNER JOIN setor s ON f.id_Setor=s.id WHERE `Matricula_Func`=" + Session["usuariologado"].ToString(), connection3);
@@ -47,7 +47,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                     setor.Text = reader1.GetString("nome_setor");
                     num_matricu = reader1.GetInt32("Matricula_Func");
                     matricula.Text = Convert.ToString(num_matricu);
-                   
+
                 }
 
 
@@ -107,7 +107,7 @@ namespace Gestão_de_Protocolos.Caixa_de_Entrada
                         PdfReader reader = new PdfReader(inputPdfStream);
                         PdfStamper stamper = new PdfStamper(reader, outputPdfStream);
 
-                        Image image = Image.GetInstance(Server.MapPath("~/Anexos/carimbo"+num_matricu+".png"));
+                        Image image = Image.GetInstance(Server.MapPath("~/Anexos/carimbo" + num_matricu + ".png"));
                         image.ScaleAbsolute(600, 500); // ajuste o tamanho da imagem conforme necessário
 
                         int numPages = reader.NumberOfPages;

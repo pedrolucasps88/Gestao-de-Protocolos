@@ -17,7 +17,7 @@
            
     <div class="container-fluid" >
         <div class="row">
-            <div class="col-sm-6 "><img src="" style="width: 300px; margin-top:-30px;" alt=""></div>
+            <div class="col-sm-6 "><img  style="width: 300px; margin-top:-30px;" alt="" /></div>
         </div>
     </div>
     <div class="container-sm text-center pt-1">

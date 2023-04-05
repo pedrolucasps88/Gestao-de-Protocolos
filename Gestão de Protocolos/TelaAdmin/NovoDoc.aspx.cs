@@ -16,7 +16,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             if (!IsPostBack)
             {
 
-                 setorsele = Request.QueryString["setor"].ToString();
+                setorsele = Request.QueryString["setor"].ToString();
                 nome_set.Text = setorsele;
             }
         }
@@ -26,7 +26,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
             if (pngzin.HasFile)
             {
                 var FileExtension = Path.GetExtension(pngzin.PostedFile.FileName).Substring(1);
-                pngzin.SaveAs(Server.MapPath("~") + "/DocumentosPadroes/Thumbs/" + setorsele +"/"+ Nome_doc.Text + "." + FileExtension);
+                pngzin.SaveAs(Server.MapPath("~") + "/DocumentosPadroes/Thumbs/" + setorsele + "/" + Nome_doc.Text + "." + FileExtension);
             }
             if (pdf.HasFile)
             {

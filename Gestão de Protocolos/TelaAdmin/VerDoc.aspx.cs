@@ -26,7 +26,7 @@ namespace Gestão_de_Protocolos.TelaAdmin
                     if (Path.GetExtension(nomeArquivo) == ".png")
                     {
 
-                        docpadro.InnerHtml += "<br/> <a href='../DocumentosPadroes/Documentos/" + setorsele + "/" + nomeArquivo.Replace(".png", ".pdf") + "' target='_blank' ><img src='../DocumentosPadroes/Thumbs/"+ setorsele+"/" + nomeArquivo + "'style='width: 200px; height: 250px;'/> </a><br/> ";
+                        docpadro.InnerHtml += "<br/> <a href='../DocumentosPadroes/Documentos/" + setorsele + "/" + nomeArquivo.Replace(".png", ".pdf") + "' target='_blank' ><img src='../DocumentosPadroes/Thumbs/" + setorsele + "/" + nomeArquivo + "'style='width: 200px; height: 250px;'/> </a><br/> ";
                     }
                 }
             }

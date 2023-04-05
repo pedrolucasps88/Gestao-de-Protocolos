@@ -14,19 +14,19 @@ namespace Gestão_de_Protocolos.Login
     public partial class Login : System.Web.UI.Page
     {
 
-      
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           // Session["usuariologado"] = Convert.ToInt32(txtid_funcionario.Text);
+            // Session["usuariologado"] = Convert.ToInt32(txtid_funcionario.Text);
         }
         protected void btngo_Click(object sender, EventArgs e)
         {
 
-            
+
             string connectionString = "Server=127.0.0.1;User ID=root;Password=;Database=unibr";
             string id_funcionario = txtid_funcionario.Text;
-             string senha_funcionario = txtpassword.Text;
-           // Log.Logger = new LoggerConfiguration().WriteTo.File("C:\\Users\\Desktop\\Nova pasta (6)\\Gestao-de-Protocolos\\myapp.txt", restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Hour).CreateLogger();
+            string senha_funcionario = txtpassword.Text;
+            // Log.Logger = new LoggerConfiguration().WriteTo.File("C:\\Users\\Desktop\\Nova pasta (6)\\Gestao-de-Protocolos\\myapp.txt", restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Hour).CreateLogger();
             try
             {
                 using (var connection = new MySqlConnection(connectionString))
@@ -36,13 +36,13 @@ namespace Gestão_de_Protocolos.Login
                         Response.Redirect("../TelaAdmin/TelaDeAdmin.aspx");
                     }
                     connection.Open();
-                   // Log.Information("Iniciando pesquisa no Banco de Dados!");
+                    // Log.Information("Iniciando pesquisa no Banco de Dados!");
                     string sql = "SELECT * FROM `funcionarios` WHERE Matricula_Func = @matricula_func AND senha = @senha";
                     var command = new MySqlCommand(sql, connection);
                     command.Parameters.AddWithValue("@matricula_func", Convert.ToInt32(id_funcionario));
-                    command.Parameters.AddWithValue("@senha",senha_funcionario);
-                   // Log.Information("verificação dos parametros!");
-                   
+                    command.Parameters.AddWithValue("@senha", senha_funcionario);
+                    // Log.Information("verificação dos parametros!");
+
                     int result = Convert.ToInt32(command.ExecuteScalar());
                     if (result > 0)
                     {
@@ -55,14 +55,14 @@ namespace Gestão_de_Protocolos.Login
                     {
                         lbl_aviso.Text = "Id do funcionário ou senha incorretos.";
                     }
-                   // Log.Information("verificação concluida!");
-                   // Log.Information("finalizando processo de login!");
+                    // Log.Information("verificação concluida!");
+                    // Log.Information("finalizando processo de login!");
                 }
             }
             catch (Exception erro)
             {
 
-              //  Log.Error("Deu ruim" + erro.Message);
+                //  Log.Error("Deu ruim" + erro.Message);
             }
             finally
             {
@@ -87,4 +87,3 @@ namespace Gestão_de_Protocolos.Login
 
 
 
-   
